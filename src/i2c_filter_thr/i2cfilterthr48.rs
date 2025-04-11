@@ -1,1 +1,35 @@
-# [doc = "Register `I2CFILTERTHR48` reader"] pub type R = crate :: R < I2cfilterthr48Spec > ; # [doc = "Register `I2CFILTERTHR48` writer"] pub type W = crate :: W < I2cfilterthr48Spec > ; # [doc = "Field `MAP2` reader - MAP2"] pub type Map2R = crate :: FieldReader < u32 > ; # [doc = "Field `MAP2` writer - MAP2"] pub type Map2W < 'a , REG > = crate :: FieldWriter < 'a , REG , 32 , u32 > ; impl R { # [doc = "Bits 0:31 - MAP2"] # [inline (always)] pub fn map2 (& self) -> Map2R { Map2R :: new (self . bits) } } impl W { # [doc = "Bits 0:31 - MAP2"] # [inline (always)] pub fn map2 (& mut self) -> Map2W < I2cfilterthr48Spec > { Map2W :: new (self , 0) } } # [doc = "I2CFLT\\_THRN\\_MAP2\n\nYou can [`read`](crate::Reg::read) this register and get [`i2cfilterthr48::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`i2cfilterthr48::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."] pub struct I2cfilterthr48Spec ; impl crate :: RegisterSpec for I2cfilterthr48Spec { type Ux = u32 ; } # [doc = "`read()` method returns [`i2cfilterthr48::R`](R) reader structure"] impl crate :: Readable for I2cfilterthr48Spec { } # [doc = "`write(|w| ..)` method takes [`i2cfilterthr48::W`](W) writer structure"] impl crate :: Writable for I2cfilterthr48Spec { type Safety = crate :: Unsafe ; } # [doc = "`reset()` method sets I2CFILTERTHR48 to value 0"] impl crate :: Resettable for I2cfilterthr48Spec { }
+#[doc = "Register `I2CFILTERTHR48` reader"]
+pub type R = crate::R<I2cfilterthr48Spec>;
+#[doc = "Register `I2CFILTERTHR48` writer"]
+pub type W = crate::W<I2cfilterthr48Spec>;
+#[doc = "Field `MAP2` reader - MAP2"]
+pub type Map2R = crate::FieldReader<u32>;
+#[doc = "Field `MAP2` writer - MAP2"]
+pub type Map2W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+impl R {
+    #[doc = "Bits 0:31 - MAP2"]
+    #[inline(always)]
+    pub fn map2(&self) -> Map2R {
+        Map2R::new(self.bits)
+    }
+}
+impl W {
+    #[doc = "Bits 0:31 - MAP2"]
+    #[inline(always)]
+    pub fn map2(&mut self) -> Map2W<I2cfilterthr48Spec> {
+        Map2W::new(self, 0)
+    }
+}
+#[doc = "I2CFLT\\_THRN\\_MAP2\n\nYou can [`read`](crate::Reg::read) this register and get [`i2cfilterthr48::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`i2cfilterthr48::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct I2cfilterthr48Spec;
+impl crate::RegisterSpec for I2cfilterthr48Spec {
+    type Ux = u32;
+}
+#[doc = "`read()` method returns [`i2cfilterthr48::R`](R) reader structure"]
+impl crate::Readable for I2cfilterthr48Spec {}
+#[doc = "`write(|w| ..)` method takes [`i2cfilterthr48::W`](W) writer structure"]
+impl crate::Writable for I2cfilterthr48Spec {
+    type Safety = crate::Unsafe;
+}
+#[doc = "`reset()` method sets I2CFILTERTHR48 to value 0"]
+impl crate::Resettable for I2cfilterthr48Spec {}
