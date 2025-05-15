@@ -2,51 +2,51 @@
 pub type R = crate::R<Scuf34Spec>;
 #[doc = "Register `SCUF34` writer"]
 pub type W = crate::W<Scuf34Spec>;
-#[doc = "Field `EnblWrProtOfHlinkSCU510` reader - Enable Write Protection of hlinkSCU510"]
-pub type EnblWrProtOfHlinkScu510R = crate::BitReader;
-#[doc = "Field `EnblWrProtOfHlinkSCU510` writer - Enable Write Protection of hlinkSCU510"]
-pub type EnblWrProtOfHlinkScu510W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `EnblWrProtOfHlinkSCU514` reader - Enable Write Protection of hlinkSCU514"]
-pub type EnblWrProtOfHlinkScu514R = crate::BitReader;
-#[doc = "Field `EnblWrProtOfHlinkSCU514` writer - Enable Write Protection of hlinkSCU514"]
-pub type EnblWrProtOfHlinkScu514W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `EnblWrProtOfHlinkSCU518` reader - Enable Write Protection of hlinkSCU518"]
-pub type EnblWrProtOfHlinkScu518R = crate::BitReader;
-#[doc = "Field `EnblWrProtOfHlinkSCU518` writer - Enable Write Protection of hlinkSCU518"]
-pub type EnblWrProtOfHlinkScu518W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblWrProtOfSCU510` reader - Enable Write Protection of hlinkSCU510"]
+pub type EnblWrProtOfScu510R = crate::BitReader;
+#[doc = "Field `EnblWrProtOfSCU510` writer - Enable Write Protection of hlinkSCU510"]
+pub type EnblWrProtOfScu510W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblWrProtOfSCU514` reader - Enable Write Protection of hlinkSCU514"]
+pub type EnblWrProtOfScu514R = crate::BitReader;
+#[doc = "Field `EnblWrProtOfSCU514` writer - Enable Write Protection of hlinkSCU514"]
+pub type EnblWrProtOfScu514W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblWrProtOfSCU518` reader - Enable Write Protection of hlinkSCU518"]
+pub type EnblWrProtOfScu518R = crate::BitReader;
+#[doc = "Field `EnblWrProtOfSCU518` writer - Enable Write Protection of hlinkSCU518"]
+pub type EnblWrProtOfScu518W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `Reserved3` reader - Reserved(0)"]
 pub type Reserved3R = crate::BitReader;
-#[doc = "Field `EnblWrProtOfHlinkSCU530` reader - Enable Write Protection of hlinkSCU530"]
-pub type EnblWrProtOfHlinkScu530R = crate::BitReader;
-#[doc = "Field `EnblWrProtOfHlinkSCU530` writer - Enable Write Protection of hlinkSCU530"]
-pub type EnblWrProtOfHlinkScu530W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblWrProtOfSCU530` reader - Enable Write Protection of hlinkSCU530"]
+pub type EnblWrProtOfScu530R = crate::BitReader;
+#[doc = "Field `EnblWrProtOfSCU530` writer - Enable Write Protection of hlinkSCU530"]
+pub type EnblWrProtOfScu530W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `Reserved2` reader - Reserved(0)"]
 pub type Reserved2R = crate::FieldReader;
-#[doc = "Field `EnblWrProtOfHlinkSCU550` reader - Enable Write Protection of hlinkSCU550"]
-pub type EnblWrProtOfHlinkScu550R = crate::BitReader;
-#[doc = "Field `EnblWrProtOfHlinkSCU550` writer - Enable Write Protection of hlinkSCU550"]
-pub type EnblWrProtOfHlinkScu550W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblWrProtOfSCU550` reader - Enable Write Protection of hlinkSCU550"]
+pub type EnblWrProtOfScu550R = crate::BitReader;
+#[doc = "Field `EnblWrProtOfSCU550` writer - Enable Write Protection of hlinkSCU550"]
+pub type EnblWrProtOfScu550W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `Reserved1` reader - Reserved(0)"]
 pub type Reserved1R = crate::FieldReader;
-#[doc = "Field `EnblWrProtOfHlinkSCU590` reader - Enable Write Protection of hlinkSCU590"]
-pub type EnblWrProtOfHlinkScu590R = crate::BitReader;
-#[doc = "Field `EnblWrProtOfHlinkSCU590` writer - Enable Write Protection of hlinkSCU590"]
-pub type EnblWrProtOfHlinkScu590W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblWrProtOfSCU590` reader - Enable Write Protection of hlinkSCU590"]
+pub type EnblWrProtOfScu590R = crate::BitReader;
+#[doc = "Field `EnblWrProtOfSCU590` writer - Enable Write Protection of hlinkSCU590"]
+pub type EnblWrProtOfScu590W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Enable Write Protection of hlinkSCU510"]
     #[inline(always)]
-    pub fn enbl_wr_prot_of_hlink_scu510(&self) -> EnblWrProtOfHlinkScu510R {
-        EnblWrProtOfHlinkScu510R::new((self.bits & 1) != 0)
+    pub fn enbl_wr_prot_of_scu510(&self) -> EnblWrProtOfScu510R {
+        EnblWrProtOfScu510R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - Enable Write Protection of hlinkSCU514"]
     #[inline(always)]
-    pub fn enbl_wr_prot_of_hlink_scu514(&self) -> EnblWrProtOfHlinkScu514R {
-        EnblWrProtOfHlinkScu514R::new(((self.bits >> 1) & 1) != 0)
+    pub fn enbl_wr_prot_of_scu514(&self) -> EnblWrProtOfScu514R {
+        EnblWrProtOfScu514R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - Enable Write Protection of hlinkSCU518"]
     #[inline(always)]
-    pub fn enbl_wr_prot_of_hlink_scu518(&self) -> EnblWrProtOfHlinkScu518R {
-        EnblWrProtOfHlinkScu518R::new(((self.bits >> 2) & 1) != 0)
+    pub fn enbl_wr_prot_of_scu518(&self) -> EnblWrProtOfScu518R {
+        EnblWrProtOfScu518R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - Reserved(0)"]
     #[inline(always)]
@@ -55,8 +55,8 @@ impl R {
     }
     #[doc = "Bit 4 - Enable Write Protection of hlinkSCU530"]
     #[inline(always)]
-    pub fn enbl_wr_prot_of_hlink_scu530(&self) -> EnblWrProtOfHlinkScu530R {
-        EnblWrProtOfHlinkScu530R::new(((self.bits >> 4) & 1) != 0)
+    pub fn enbl_wr_prot_of_scu530(&self) -> EnblWrProtOfScu530R {
+        EnblWrProtOfScu530R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bits 5:7 - Reserved(0)"]
     #[inline(always)]
@@ -65,8 +65,8 @@ impl R {
     }
     #[doc = "Bit 8 - Enable Write Protection of hlinkSCU550"]
     #[inline(always)]
-    pub fn enbl_wr_prot_of_hlink_scu550(&self) -> EnblWrProtOfHlinkScu550R {
-        EnblWrProtOfHlinkScu550R::new(((self.bits >> 8) & 1) != 0)
+    pub fn enbl_wr_prot_of_scu550(&self) -> EnblWrProtOfScu550R {
+        EnblWrProtOfScu550R::new(((self.bits >> 8) & 1) != 0)
     }
     #[doc = "Bits 9:15 - Reserved(0)"]
     #[inline(always)]
@@ -75,40 +75,40 @@ impl R {
     }
     #[doc = "Bit 16 - Enable Write Protection of hlinkSCU590"]
     #[inline(always)]
-    pub fn enbl_wr_prot_of_hlink_scu590(&self) -> EnblWrProtOfHlinkScu590R {
-        EnblWrProtOfHlinkScu590R::new(((self.bits >> 16) & 1) != 0)
+    pub fn enbl_wr_prot_of_scu590(&self) -> EnblWrProtOfScu590R {
+        EnblWrProtOfScu590R::new(((self.bits >> 16) & 1) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0 - Enable Write Protection of hlinkSCU510"]
     #[inline(always)]
-    pub fn enbl_wr_prot_of_hlink_scu510(&mut self) -> EnblWrProtOfHlinkScu510W<Scuf34Spec> {
-        EnblWrProtOfHlinkScu510W::new(self, 0)
+    pub fn enbl_wr_prot_of_scu510(&mut self) -> EnblWrProtOfScu510W<Scuf34Spec> {
+        EnblWrProtOfScu510W::new(self, 0)
     }
     #[doc = "Bit 1 - Enable Write Protection of hlinkSCU514"]
     #[inline(always)]
-    pub fn enbl_wr_prot_of_hlink_scu514(&mut self) -> EnblWrProtOfHlinkScu514W<Scuf34Spec> {
-        EnblWrProtOfHlinkScu514W::new(self, 1)
+    pub fn enbl_wr_prot_of_scu514(&mut self) -> EnblWrProtOfScu514W<Scuf34Spec> {
+        EnblWrProtOfScu514W::new(self, 1)
     }
     #[doc = "Bit 2 - Enable Write Protection of hlinkSCU518"]
     #[inline(always)]
-    pub fn enbl_wr_prot_of_hlink_scu518(&mut self) -> EnblWrProtOfHlinkScu518W<Scuf34Spec> {
-        EnblWrProtOfHlinkScu518W::new(self, 2)
+    pub fn enbl_wr_prot_of_scu518(&mut self) -> EnblWrProtOfScu518W<Scuf34Spec> {
+        EnblWrProtOfScu518W::new(self, 2)
     }
     #[doc = "Bit 4 - Enable Write Protection of hlinkSCU530"]
     #[inline(always)]
-    pub fn enbl_wr_prot_of_hlink_scu530(&mut self) -> EnblWrProtOfHlinkScu530W<Scuf34Spec> {
-        EnblWrProtOfHlinkScu530W::new(self, 4)
+    pub fn enbl_wr_prot_of_scu530(&mut self) -> EnblWrProtOfScu530W<Scuf34Spec> {
+        EnblWrProtOfScu530W::new(self, 4)
     }
     #[doc = "Bit 8 - Enable Write Protection of hlinkSCU550"]
     #[inline(always)]
-    pub fn enbl_wr_prot_of_hlink_scu550(&mut self) -> EnblWrProtOfHlinkScu550W<Scuf34Spec> {
-        EnblWrProtOfHlinkScu550W::new(self, 8)
+    pub fn enbl_wr_prot_of_scu550(&mut self) -> EnblWrProtOfScu550W<Scuf34Spec> {
+        EnblWrProtOfScu550W::new(self, 8)
     }
     #[doc = "Bit 16 - Enable Write Protection of hlinkSCU590"]
     #[inline(always)]
-    pub fn enbl_wr_prot_of_hlink_scu590(&mut self) -> EnblWrProtOfHlinkScu590W<Scuf34Spec> {
-        EnblWrProtOfHlinkScu590W::new(self, 16)
+    pub fn enbl_wr_prot_of_scu590(&mut self) -> EnblWrProtOfScu590W<Scuf34Spec> {
+        EnblWrProtOfScu590W::new(self, 16)
     }
 }
 #[doc = "Write Protect Register \\#14\n\nYou can [`read`](crate::Reg::read) this register and get [`scuf34::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`scuf34::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

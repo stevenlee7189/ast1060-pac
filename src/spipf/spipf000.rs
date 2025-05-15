@@ -22,6 +22,8 @@ pub type SpimodeR = crate::FieldReader;
 pub type SpimodeW<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `AddrTableSel` reader - Address Table Selection"]
 pub type AddrTableSelR = crate::BitReader;
+#[doc = "Field `AddrTableSel` writer - Address Table Selection"]
+pub type AddrTableSelW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `BlockMode` reader - Block Mode"]
 pub type BlockModeR = crate::BitReader;
 #[doc = "Field `BlockMode` writer - Block Mode"]
@@ -70,18 +72,22 @@ pub type EnblDebounceOfDataIn2W<'a, REG> = crate::BitWriter<'a, REG>;
 pub type EnblDebounceOfDataIn3R = crate::BitReader;
 #[doc = "Field `EnblDebounceOfDataIn3` writer - Enable Debounce of DataIn\\[3\\]"]
 pub type EnblDebounceOfDataIn3W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `WrDisOfHlinkSPIPF0001` reader - Write Disable of hlinkSPIPF000"]
-pub type WrDisOfHlinkSpipf0001R = crate::BitReader;
-#[doc = "Field `WrDisOfHlinkSPIPF0001` writer - Write Disable of hlinkSPIPF000"]
-pub type WrDisOfHlinkSpipf0001W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `WrDisOfHlinkSPIPF000` reader - Write Disable of hlinkSPIPF000"]
-pub type WrDisOfHlinkSpipf000R = crate::BitReader;
-#[doc = "Field `WrDisOfHlinkSPIPF000` writer - Write Disable of hlinkSPIPF000"]
-pub type WrDisOfHlinkSpipf000W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `WrDisOfSPIPF0001` reader - Write Disable of hlinkSPIPF000"]
+pub type WrDisOfSpipf0001R = crate::BitReader;
+#[doc = "Field `WrDisOfSPIPF0001` writer - Write Disable of hlinkSPIPF000"]
+pub type WrDisOfSpipf0001W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `WrDisOfSPIPF000` reader - Write Disable of hlinkSPIPF000"]
+pub type WrDisOfSpipf000R = crate::BitReader;
+#[doc = "Field `WrDisOfSPIPF000` writer - Write Disable of hlinkSPIPF000"]
+pub type WrDisOfSpipf000W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `BlockFIFOLen` reader - Block FIFO length"]
 pub type BlockFifolenR = crate::FieldReader;
+#[doc = "Field `BlockFIFOLen` writer - Block FIFO length"]
+pub type BlockFifolenW<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `Reserved0` reader - Reserved (0)"]
 pub type Reserved0R = crate::FieldReader;
+#[doc = "Field `Reserved0` writer - Reserved (0)"]
+pub type Reserved0W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 impl R {
     #[doc = "Bit 0 - Enable Single Bit Passthrough"]
     #[inline(always)]
@@ -175,13 +181,13 @@ impl R {
     }
     #[doc = "Bit 22 - Write Disable of hlinkSPIPF000"]
     #[inline(always)]
-    pub fn wr_dis_of_hlink_spipf0001(&self) -> WrDisOfHlinkSpipf0001R {
-        WrDisOfHlinkSpipf0001R::new(((self.bits >> 22) & 1) != 0)
+    pub fn wr_dis_of_spipf0001(&self) -> WrDisOfSpipf0001R {
+        WrDisOfSpipf0001R::new(((self.bits >> 22) & 1) != 0)
     }
     #[doc = "Bit 23 - Write Disable of hlinkSPIPF000"]
     #[inline(always)]
-    pub fn wr_dis_of_hlink_spipf000(&self) -> WrDisOfHlinkSpipf000R {
-        WrDisOfHlinkSpipf000R::new(((self.bits >> 23) & 1) != 0)
+    pub fn wr_dis_of_spipf000(&self) -> WrDisOfSpipf000R {
+        WrDisOfSpipf000R::new(((self.bits >> 23) & 1) != 0)
     }
     #[doc = "Bits 24:26 - Block FIFO length"]
     #[inline(always)]
@@ -214,6 +220,11 @@ impl W {
     #[inline(always)]
     pub fn spimode(&mut self) -> SpimodeW<Spipf000Spec> {
         SpimodeW::new(self, 4)
+    }
+    #[doc = "Bit 6 - Address Table Selection"]
+    #[inline(always)]
+    pub fn addr_table_sel(&mut self) -> AddrTableSelW<Spipf000Spec> {
+        AddrTableSelW::new(self, 6)
     }
     #[doc = "Bit 7 - Block Mode"]
     #[inline(always)]
@@ -277,13 +288,23 @@ impl W {
     }
     #[doc = "Bit 22 - Write Disable of hlinkSPIPF000"]
     #[inline(always)]
-    pub fn wr_dis_of_hlink_spipf0001(&mut self) -> WrDisOfHlinkSpipf0001W<Spipf000Spec> {
-        WrDisOfHlinkSpipf0001W::new(self, 22)
+    pub fn wr_dis_of_spipf0001(&mut self) -> WrDisOfSpipf0001W<Spipf000Spec> {
+        WrDisOfSpipf0001W::new(self, 22)
     }
     #[doc = "Bit 23 - Write Disable of hlinkSPIPF000"]
     #[inline(always)]
-    pub fn wr_dis_of_hlink_spipf000(&mut self) -> WrDisOfHlinkSpipf000W<Spipf000Spec> {
-        WrDisOfHlinkSpipf000W::new(self, 23)
+    pub fn wr_dis_of_spipf000(&mut self) -> WrDisOfSpipf000W<Spipf000Spec> {
+        WrDisOfSpipf000W::new(self, 23)
+    }
+    #[doc = "Bits 24:26 - Block FIFO length"]
+    #[inline(always)]
+    pub fn block_fifolen(&mut self) -> BlockFifolenW<Spipf000Spec> {
+        BlockFifolenW::new(self, 24)
+    }
+    #[doc = "Bits 27:31 - Reserved (0)"]
+    #[inline(always)]
+    pub fn reserved0(&mut self) -> Reserved0W<Spipf000Spec> {
+        Reserved0W::new(self, 27)
     }
 }
 #[doc = "Engine Control Register\n\nYou can [`read`](crate::Reg::read) this register and get [`spipf000::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`spipf000::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

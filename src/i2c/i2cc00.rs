@@ -2,10 +2,10 @@
 pub type R = crate::R<I2cc00Spec>;
 #[doc = "Register `I2CC00` writer"]
 pub type W = crate::W<I2cc00Spec>;
-#[doc = "Field `SameAsHlinkI2CD00` reader - Same as hlinkI2CD00"]
-pub type SameAsHlinkI2cd00R = crate::FieldReader<u32>;
-#[doc = "Field `SameAsHlinkI2CD00` writer - Same as hlinkI2CD00"]
-pub type SameAsHlinkI2cd00W<'a, REG> = crate::FieldWriter<'a, REG, 18, u32>;
+#[doc = "Field `SameAsI2CD00` reader - Same as hlinkI2CD00"]
+pub type SameAsI2cd00R = crate::FieldReader<u32>;
+#[doc = "Field `SameAsI2CD00` writer - Same as hlinkI2CD00"]
+pub type SameAsI2cd00W<'a, REG> = crate::FieldWriter<'a, REG, 18, u32>;
 #[doc = "Field `MasterPktOpRetryCount` reader - Master packet operation retry count"]
 pub type MasterPktOpRetryCountR = crate::FieldReader;
 #[doc = "Field `MasterPktOpRetryCount` writer - Master packet operation retry count"]
@@ -29,8 +29,8 @@ pub type Reserved0R = crate::FieldReader<u16>;
 impl R {
     #[doc = "Bits 0:17 - Same as hlinkI2CD00"]
     #[inline(always)]
-    pub fn same_as_hlink_i2cd00(&self) -> SameAsHlinkI2cd00R {
-        SameAsHlinkI2cd00R::new(self.bits & 0x0003_ffff)
+    pub fn same_as_i2cd00(&self) -> SameAsI2cd00R {
+        SameAsI2cd00R::new(self.bits & 0x0003_ffff)
     }
     #[doc = "Bits 18:19 - Master packet operation retry count"]
     #[inline(always)]
@@ -70,8 +70,8 @@ impl R {
 impl W {
     #[doc = "Bits 0:17 - Same as hlinkI2CD00"]
     #[inline(always)]
-    pub fn same_as_hlink_i2cd00(&mut self) -> SameAsHlinkI2cd00W<I2cc00Spec> {
-        SameAsHlinkI2cd00W::new(self, 0)
+    pub fn same_as_i2cd00(&mut self) -> SameAsI2cd00W<I2cc00Spec> {
+        SameAsI2cd00W::new(self, 0)
     }
     #[doc = "Bits 18:19 - Master packet operation retry count"]
     #[inline(always)]

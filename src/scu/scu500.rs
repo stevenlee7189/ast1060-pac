@@ -10,10 +10,10 @@ pub type DisArmcm4cpubootTxd5W<'a, REG> = crate::BitWriter<'a, REG>;
 pub type Reserved27R = crate::FieldReader;
 #[doc = "Field `Reserved27` writer - Reserved"]
 pub type Reserved27W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
-#[doc = "Field `AddrOffsetOfABRSingleChipModehlinkOTPSTRAP3` reader - Address Offset of ABR Single Chip Mode(hlinkOTPSTRAP\\[3\\])"]
-pub type AddrOffsetOfAbrsingleChipModehlinkOtpstrap3R = crate::BitReader;
-#[doc = "Field `AddrOffsetOfABRSingleChipModehlinkOTPSTRAP3` writer - Address Offset of ABR Single Chip Mode(hlinkOTPSTRAP\\[3\\])"]
-pub type AddrOffsetOfAbrsingleChipModehlinkOtpstrap3W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `AddrOffsetOfABRSingleChipModeOTPSTRAP3` reader - Address Offset of ABR Single Chip Mode(hlinkOTPSTRAP\\[3\\])"]
+pub type AddrOffsetOfAbrsingleChipModeOtpstrap3R = crate::BitReader;
+#[doc = "Field `AddrOffsetOfABRSingleChipModeOTPSTRAP3` writer - Address Offset of ABR Single Chip Mode(hlinkOTPSTRAP\\[3\\])"]
+pub type AddrOffsetOfAbrsingleChipModeOtpstrap3W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `Reserved26` reader - Reserved (0) (hlinkOTPSTRAP\\[4\\])"]
 pub type Reserved26R = crate::BitReader;
 #[doc = "Field `Reserved26` writer - Reserved (0) (hlinkOTPSTRAP\\[4\\])"]
@@ -66,10 +66,10 @@ pub type Reserved15W<'a, REG> = crate::BitWriter<'a, REG>;
 pub type Reserved14R = crate::BitReader;
 #[doc = "Field `Reserved14` writer - Reserved (0) (hlinkOTPSTRAP\\[16\\])"]
 pub type Reserved14W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `DisARMCM4DebugHlinkOTPSTRAP17` reader - Disable ARM CM4 debug (hlinkOTPSTRAP\\[17\\])"]
-pub type DisArmcm4debugHlinkOtpstrap17R = crate::BitReader;
-#[doc = "Field `DisARMCM4DebugHlinkOTPSTRAP17` writer - Disable ARM CM4 debug (hlinkOTPSTRAP\\[17\\])"]
-pub type DisArmcm4debugHlinkOtpstrap17W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `DisARMCM4DebugOTPSTRAP17` reader - Disable ARM CM4 debug (hlinkOTPSTRAP\\[17\\])"]
+pub type DisArmcm4debugOtpstrap17R = crate::BitReader;
+#[doc = "Field `DisARMCM4DebugOTPSTRAP17` writer - Disable ARM CM4 debug (hlinkOTPSTRAP\\[17\\])"]
+pub type DisArmcm4debugOtpstrap17W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `Reserved13` reader - Reserved (0) (hlinkOTPSTRAP\\[18\\])"]
 pub type Reserved13R = crate::BitReader;
 #[doc = "Field `Reserved13` writer - Reserved (0) (hlinkOTPSTRAP\\[18\\])"]
@@ -135,10 +135,10 @@ impl R {
     }
     #[doc = "Bit 3 - Address Offset of ABR Single Chip Mode(hlinkOTPSTRAP\\[3\\])"]
     #[inline(always)]
-    pub fn addr_offset_of_abrsingle_chip_modehlink_otpstrap3(
+    pub fn addr_offset_of_abrsingle_chip_mode_otpstrap3(
         &self,
-    ) -> AddrOffsetOfAbrsingleChipModehlinkOtpstrap3R {
-        AddrOffsetOfAbrsingleChipModehlinkOtpstrap3R::new(((self.bits >> 3) & 1) != 0)
+    ) -> AddrOffsetOfAbrsingleChipModeOtpstrap3R {
+        AddrOffsetOfAbrsingleChipModeOtpstrap3R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 4 - Reserved (0) (hlinkOTPSTRAP\\[4\\])"]
     #[inline(always)]
@@ -207,8 +207,8 @@ impl R {
     }
     #[doc = "Bit 17 - Disable ARM CM4 debug (hlinkOTPSTRAP\\[17\\])"]
     #[inline(always)]
-    pub fn dis_armcm4debug_hlink_otpstrap17(&self) -> DisArmcm4debugHlinkOtpstrap17R {
-        DisArmcm4debugHlinkOtpstrap17R::new(((self.bits >> 17) & 1) != 0)
+    pub fn dis_armcm4debug_otpstrap17(&self) -> DisArmcm4debugOtpstrap17R {
+        DisArmcm4debugOtpstrap17R::new(((self.bits >> 17) & 1) != 0)
     }
     #[doc = "Bit 18 - Reserved (0) (hlinkOTPSTRAP\\[18\\])"]
     #[inline(always)]
@@ -289,10 +289,10 @@ impl W {
     }
     #[doc = "Bit 3 - Address Offset of ABR Single Chip Mode(hlinkOTPSTRAP\\[3\\])"]
     #[inline(always)]
-    pub fn addr_offset_of_abrsingle_chip_modehlink_otpstrap3(
+    pub fn addr_offset_of_abrsingle_chip_mode_otpstrap3(
         &mut self,
-    ) -> AddrOffsetOfAbrsingleChipModehlinkOtpstrap3W<Scu500Spec> {
-        AddrOffsetOfAbrsingleChipModehlinkOtpstrap3W::new(self, 3)
+    ) -> AddrOffsetOfAbrsingleChipModeOtpstrap3W<Scu500Spec> {
+        AddrOffsetOfAbrsingleChipModeOtpstrap3W::new(self, 3)
     }
     #[doc = "Bit 4 - Reserved (0) (hlinkOTPSTRAP\\[4\\])"]
     #[inline(always)]
@@ -361,10 +361,8 @@ impl W {
     }
     #[doc = "Bit 17 - Disable ARM CM4 debug (hlinkOTPSTRAP\\[17\\])"]
     #[inline(always)]
-    pub fn dis_armcm4debug_hlink_otpstrap17(
-        &mut self,
-    ) -> DisArmcm4debugHlinkOtpstrap17W<Scu500Spec> {
-        DisArmcm4debugHlinkOtpstrap17W::new(self, 17)
+    pub fn dis_armcm4debug_otpstrap17(&mut self) -> DisArmcm4debugOtpstrap17W<Scu500Spec> {
+        DisArmcm4debugOtpstrap17W::new(self, 17)
     }
     #[doc = "Bit 18 - Reserved (0) (hlinkOTPSTRAP\\[18\\])"]
     #[inline(always)]

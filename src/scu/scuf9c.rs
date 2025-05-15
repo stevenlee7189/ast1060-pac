@@ -2,32 +2,32 @@
 pub type R = crate::R<Scuf9cSpec>;
 #[doc = "Register `SCUF9C` writer"]
 pub type W = crate::W<Scuf9cSpec>;
-#[doc = "Field `EnblHlinkARMRSTNAsRstSrcOfHlinkSCU310` reader - Enable hlinkARMRSTN as reset source of hlinkSCU310"]
-pub type EnblHlinkArmrstnasRstSrcOfHlinkScu310R = crate::BitReader;
-#[doc = "Field `EnblHlinkARMRSTNAsRstSrcOfHlinkSCU310` writer - Enable hlinkARMRSTN as reset source of hlinkSCU310"]
-pub type EnblHlinkArmrstnasRstSrcOfHlinkScu310W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `EnblHlinkARMRSTNAsRstSrcOfHlinkSCU314` reader - Enable hlinkARMRSTN as reset source of hlinkSCU314"]
-pub type EnblHlinkArmrstnasRstSrcOfHlinkScu314R = crate::BitReader;
-#[doc = "Field `EnblHlinkARMRSTNAsRstSrcOfHlinkSCU314` writer - Enable hlinkARMRSTN as reset source of hlinkSCU314"]
-pub type EnblHlinkArmrstnasRstSrcOfHlinkScu314W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblARMRSTNAsRstSrcOfHlinkSCU310` reader - Enable hlinkARMRSTN as reset source of hlinkSCU310"]
+pub type EnblArmrstnasRstSrcOfHlinkScu310R = crate::BitReader;
+#[doc = "Field `EnblARMRSTNAsRstSrcOfHlinkSCU310` writer - Enable hlinkARMRSTN as reset source of hlinkSCU310"]
+pub type EnblArmrstnasRstSrcOfHlinkScu310W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblARMRSTNAsRstSrcOfHlinkSCU314` reader - Enable hlinkARMRSTN as reset source of hlinkSCU314"]
+pub type EnblArmrstnasRstSrcOfHlinkScu314R = crate::BitReader;
+#[doc = "Field `EnblARMRSTNAsRstSrcOfHlinkSCU314` writer - Enable hlinkARMRSTN as reset source of hlinkSCU314"]
+pub type EnblArmrstnasRstSrcOfHlinkScu314W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `Reserved4` reader - Reserved(0)"]
 pub type Reserved4R = crate::FieldReader;
-#[doc = "Field `EnblHlinkARMRSTNAsRstSrcOfHlinkSCU330` reader - Enable hlinkARMRSTN as reset source of hlinkSCU330"]
-pub type EnblHlinkArmrstnasRstSrcOfHlinkScu330R = crate::BitReader;
-#[doc = "Field `EnblHlinkARMRSTNAsRstSrcOfHlinkSCU330` writer - Enable hlinkARMRSTN as reset source of hlinkSCU330"]
-pub type EnblHlinkArmrstnasRstSrcOfHlinkScu330W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `EnblHlinkARMRSTNAsRstSrcOfHlinkSCU334` reader - Enable hlinkARMRSTN as reset source of hlinkSCU334"]
-pub type EnblHlinkArmrstnasRstSrcOfHlinkScu334R = crate::BitReader;
-#[doc = "Field `EnblHlinkARMRSTNAsRstSrcOfHlinkSCU334` writer - Enable hlinkARMRSTN as reset source of hlinkSCU334"]
-pub type EnblHlinkArmrstnasRstSrcOfHlinkScu334W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `EnblHlinkARMRSTNAsRstSrcOfHlinkSCU338` reader - Enable hlinkARMRSTN as reset source of hlinkSCU338"]
-pub type EnblHlinkArmrstnasRstSrcOfHlinkScu338R = crate::BitReader;
-#[doc = "Field `EnblHlinkARMRSTNAsRstSrcOfHlinkSCU338` writer - Enable hlinkARMRSTN as reset source of hlinkSCU338"]
-pub type EnblHlinkArmrstnasRstSrcOfHlinkScu338W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `EnblHlinkARMRSTNAsRstSrcOfHlinkSCU33C` reader - Enable hlinkARMRSTN as reset source of hlinkSCU33C"]
-pub type EnblHlinkArmrstnasRstSrcOfHlinkScu33cR = crate::BitReader;
-#[doc = "Field `EnblHlinkARMRSTNAsRstSrcOfHlinkSCU33C` writer - Enable hlinkARMRSTN as reset source of hlinkSCU33C"]
-pub type EnblHlinkArmrstnasRstSrcOfHlinkScu33cW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblARMRSTNAsRstSrcOfHlinkSCU330` reader - Enable hlinkARMRSTN as reset source of hlinkSCU330"]
+pub type EnblArmrstnasRstSrcOfHlinkScu330R = crate::BitReader;
+#[doc = "Field `EnblARMRSTNAsRstSrcOfHlinkSCU330` writer - Enable hlinkARMRSTN as reset source of hlinkSCU330"]
+pub type EnblArmrstnasRstSrcOfHlinkScu330W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblARMRSTNAsRstSrcOfHlinkSCU334` reader - Enable hlinkARMRSTN as reset source of hlinkSCU334"]
+pub type EnblArmrstnasRstSrcOfHlinkScu334R = crate::BitReader;
+#[doc = "Field `EnblARMRSTNAsRstSrcOfHlinkSCU334` writer - Enable hlinkARMRSTN as reset source of hlinkSCU334"]
+pub type EnblArmrstnasRstSrcOfHlinkScu334W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblARMRSTNAsRstSrcOfHlinkSCU338` reader - Enable hlinkARMRSTN as reset source of hlinkSCU338"]
+pub type EnblArmrstnasRstSrcOfHlinkScu338R = crate::BitReader;
+#[doc = "Field `EnblARMRSTNAsRstSrcOfHlinkSCU338` writer - Enable hlinkARMRSTN as reset source of hlinkSCU338"]
+pub type EnblArmrstnasRstSrcOfHlinkScu338W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblARMRSTNAsRstSrcOfHlinkSCU33C` reader - Enable hlinkARMRSTN as reset source of hlinkSCU33C"]
+pub type EnblArmrstnasRstSrcOfHlinkScu33cR = crate::BitReader;
+#[doc = "Field `EnblARMRSTNAsRstSrcOfHlinkSCU33C` writer - Enable hlinkARMRSTN as reset source of hlinkSCU33C"]
+pub type EnblArmrstnasRstSrcOfHlinkScu33cW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `Reserved3` reader - Reserved"]
 pub type Reserved3R = crate::BitReader;
 #[doc = "Field `Reserved3` writer - Reserved"]
@@ -41,17 +41,13 @@ pub type Reserved1W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 impl R {
     #[doc = "Bit 0 - Enable hlinkARMRSTN as reset source of hlinkSCU310"]
     #[inline(always)]
-    pub fn enbl_hlink_armrstnas_rst_src_of_hlink_scu310(
-        &self,
-    ) -> EnblHlinkArmrstnasRstSrcOfHlinkScu310R {
-        EnblHlinkArmrstnasRstSrcOfHlinkScu310R::new((self.bits & 1) != 0)
+    pub fn enbl_armrstnas_rst_src_of_hlink_scu310(&self) -> EnblArmrstnasRstSrcOfHlinkScu310R {
+        EnblArmrstnasRstSrcOfHlinkScu310R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - Enable hlinkARMRSTN as reset source of hlinkSCU314"]
     #[inline(always)]
-    pub fn enbl_hlink_armrstnas_rst_src_of_hlink_scu314(
-        &self,
-    ) -> EnblHlinkArmrstnasRstSrcOfHlinkScu314R {
-        EnblHlinkArmrstnasRstSrcOfHlinkScu314R::new(((self.bits >> 1) & 1) != 0)
+    pub fn enbl_armrstnas_rst_src_of_hlink_scu314(&self) -> EnblArmrstnasRstSrcOfHlinkScu314R {
+        EnblArmrstnasRstSrcOfHlinkScu314R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bits 2:3 - Reserved(0)"]
     #[inline(always)]
@@ -60,31 +56,23 @@ impl R {
     }
     #[doc = "Bit 4 - Enable hlinkARMRSTN as reset source of hlinkSCU330"]
     #[inline(always)]
-    pub fn enbl_hlink_armrstnas_rst_src_of_hlink_scu330(
-        &self,
-    ) -> EnblHlinkArmrstnasRstSrcOfHlinkScu330R {
-        EnblHlinkArmrstnasRstSrcOfHlinkScu330R::new(((self.bits >> 4) & 1) != 0)
+    pub fn enbl_armrstnas_rst_src_of_hlink_scu330(&self) -> EnblArmrstnasRstSrcOfHlinkScu330R {
+        EnblArmrstnasRstSrcOfHlinkScu330R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bit 5 - Enable hlinkARMRSTN as reset source of hlinkSCU334"]
     #[inline(always)]
-    pub fn enbl_hlink_armrstnas_rst_src_of_hlink_scu334(
-        &self,
-    ) -> EnblHlinkArmrstnasRstSrcOfHlinkScu334R {
-        EnblHlinkArmrstnasRstSrcOfHlinkScu334R::new(((self.bits >> 5) & 1) != 0)
+    pub fn enbl_armrstnas_rst_src_of_hlink_scu334(&self) -> EnblArmrstnasRstSrcOfHlinkScu334R {
+        EnblArmrstnasRstSrcOfHlinkScu334R::new(((self.bits >> 5) & 1) != 0)
     }
     #[doc = "Bit 6 - Enable hlinkARMRSTN as reset source of hlinkSCU338"]
     #[inline(always)]
-    pub fn enbl_hlink_armrstnas_rst_src_of_hlink_scu338(
-        &self,
-    ) -> EnblHlinkArmrstnasRstSrcOfHlinkScu338R {
-        EnblHlinkArmrstnasRstSrcOfHlinkScu338R::new(((self.bits >> 6) & 1) != 0)
+    pub fn enbl_armrstnas_rst_src_of_hlink_scu338(&self) -> EnblArmrstnasRstSrcOfHlinkScu338R {
+        EnblArmrstnasRstSrcOfHlinkScu338R::new(((self.bits >> 6) & 1) != 0)
     }
     #[doc = "Bit 7 - Enable hlinkARMRSTN as reset source of hlinkSCU33C"]
     #[inline(always)]
-    pub fn enbl_hlink_armrstnas_rst_src_of_hlink_scu33c(
-        &self,
-    ) -> EnblHlinkArmrstnasRstSrcOfHlinkScu33cR {
-        EnblHlinkArmrstnasRstSrcOfHlinkScu33cR::new(((self.bits >> 7) & 1) != 0)
+    pub fn enbl_armrstnas_rst_src_of_hlink_scu33c(&self) -> EnblArmrstnasRstSrcOfHlinkScu33cR {
+        EnblArmrstnasRstSrcOfHlinkScu33cR::new(((self.bits >> 7) & 1) != 0)
     }
     #[doc = "Bit 8 - Reserved"]
     #[inline(always)]
@@ -105,45 +93,45 @@ impl R {
 impl W {
     #[doc = "Bit 0 - Enable hlinkARMRSTN as reset source of hlinkSCU310"]
     #[inline(always)]
-    pub fn enbl_hlink_armrstnas_rst_src_of_hlink_scu310(
+    pub fn enbl_armrstnas_rst_src_of_hlink_scu310(
         &mut self,
-    ) -> EnblHlinkArmrstnasRstSrcOfHlinkScu310W<Scuf9cSpec> {
-        EnblHlinkArmrstnasRstSrcOfHlinkScu310W::new(self, 0)
+    ) -> EnblArmrstnasRstSrcOfHlinkScu310W<Scuf9cSpec> {
+        EnblArmrstnasRstSrcOfHlinkScu310W::new(self, 0)
     }
     #[doc = "Bit 1 - Enable hlinkARMRSTN as reset source of hlinkSCU314"]
     #[inline(always)]
-    pub fn enbl_hlink_armrstnas_rst_src_of_hlink_scu314(
+    pub fn enbl_armrstnas_rst_src_of_hlink_scu314(
         &mut self,
-    ) -> EnblHlinkArmrstnasRstSrcOfHlinkScu314W<Scuf9cSpec> {
-        EnblHlinkArmrstnasRstSrcOfHlinkScu314W::new(self, 1)
+    ) -> EnblArmrstnasRstSrcOfHlinkScu314W<Scuf9cSpec> {
+        EnblArmrstnasRstSrcOfHlinkScu314W::new(self, 1)
     }
     #[doc = "Bit 4 - Enable hlinkARMRSTN as reset source of hlinkSCU330"]
     #[inline(always)]
-    pub fn enbl_hlink_armrstnas_rst_src_of_hlink_scu330(
+    pub fn enbl_armrstnas_rst_src_of_hlink_scu330(
         &mut self,
-    ) -> EnblHlinkArmrstnasRstSrcOfHlinkScu330W<Scuf9cSpec> {
-        EnblHlinkArmrstnasRstSrcOfHlinkScu330W::new(self, 4)
+    ) -> EnblArmrstnasRstSrcOfHlinkScu330W<Scuf9cSpec> {
+        EnblArmrstnasRstSrcOfHlinkScu330W::new(self, 4)
     }
     #[doc = "Bit 5 - Enable hlinkARMRSTN as reset source of hlinkSCU334"]
     #[inline(always)]
-    pub fn enbl_hlink_armrstnas_rst_src_of_hlink_scu334(
+    pub fn enbl_armrstnas_rst_src_of_hlink_scu334(
         &mut self,
-    ) -> EnblHlinkArmrstnasRstSrcOfHlinkScu334W<Scuf9cSpec> {
-        EnblHlinkArmrstnasRstSrcOfHlinkScu334W::new(self, 5)
+    ) -> EnblArmrstnasRstSrcOfHlinkScu334W<Scuf9cSpec> {
+        EnblArmrstnasRstSrcOfHlinkScu334W::new(self, 5)
     }
     #[doc = "Bit 6 - Enable hlinkARMRSTN as reset source of hlinkSCU338"]
     #[inline(always)]
-    pub fn enbl_hlink_armrstnas_rst_src_of_hlink_scu338(
+    pub fn enbl_armrstnas_rst_src_of_hlink_scu338(
         &mut self,
-    ) -> EnblHlinkArmrstnasRstSrcOfHlinkScu338W<Scuf9cSpec> {
-        EnblHlinkArmrstnasRstSrcOfHlinkScu338W::new(self, 6)
+    ) -> EnblArmrstnasRstSrcOfHlinkScu338W<Scuf9cSpec> {
+        EnblArmrstnasRstSrcOfHlinkScu338W::new(self, 6)
     }
     #[doc = "Bit 7 - Enable hlinkARMRSTN as reset source of hlinkSCU33C"]
     #[inline(always)]
-    pub fn enbl_hlink_armrstnas_rst_src_of_hlink_scu33c(
+    pub fn enbl_armrstnas_rst_src_of_hlink_scu33c(
         &mut self,
-    ) -> EnblHlinkArmrstnasRstSrcOfHlinkScu33cW<Scuf9cSpec> {
-        EnblHlinkArmrstnasRstSrcOfHlinkScu33cW::new(self, 7)
+    ) -> EnblArmrstnasRstSrcOfHlinkScu33cW<Scuf9cSpec> {
+        EnblArmrstnasRstSrcOfHlinkScu33cW::new(self, 7)
     }
     #[doc = "Bit 8 - Reserved"]
     #[inline(always)]

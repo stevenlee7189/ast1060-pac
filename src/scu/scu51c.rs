@@ -6,10 +6,10 @@ pub type W = crate::W<Scu51cSpec>;
 pub type EnblLowSecuritySecBootKeyByPinStrapFwspimisoR = crate::BitReader;
 #[doc = "Field `EnblLowSecuritySecBootKeyByPinStrapFWSPIMISO` writer - Enable Low Security Secure Boot Key by Pin Strap (FWSPIMISO)"]
 pub type EnblLowSecuritySecBootKeyByPinStrapFwspimisoW<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `EnblSecBootByOTPStrapOrPinStrapHlinkOTPSTRAP0` reader - Enable Secure Boot by OTP Strap or Pin Strap (hlinkOTPSTRAP\\[0\\])"]
-pub type EnblSecBootByOtpstrapOrPinStrapHlinkOtpstrap0R = crate::BitReader;
-#[doc = "Field `EnblSecBootByOTPStrapOrPinStrapHlinkOTPSTRAP0` writer - Enable Secure Boot by OTP Strap or Pin Strap (hlinkOTPSTRAP\\[0\\])"]
-pub type EnblSecBootByOtpstrapOrPinStrapHlinkOtpstrap0W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblSecBootByOTPStrapOrPinStrapOTPSTRAP0` reader - Enable Secure Boot by OTP Strap or Pin Strap (hlinkOTPSTRAP\\[0\\])"]
+pub type EnblSecBootByOtpstrapOrPinStrapOtpstrap0R = crate::BitReader;
+#[doc = "Field `EnblSecBootByOTPStrapOrPinStrapOTPSTRAP0` writer - Enable Secure Boot by OTP Strap or Pin Strap (hlinkOTPSTRAP\\[0\\])"]
+pub type EnblSecBootByOtpstrapOrPinStrapOtpstrap0W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `MirrorBitOfORPSTRAP22` reader - Mirror Bit of ORPSTRAP\\[22\\]"]
 pub type MirrorBitOfOrpstrap22R = crate::BitReader;
 #[doc = "Field `MirrorBitOfORPSTRAP22` writer - Mirror Bit of ORPSTRAP\\[22\\]"]
@@ -56,10 +56,10 @@ impl R {
     }
     #[doc = "Bit 1 - Enable Secure Boot by OTP Strap or Pin Strap (hlinkOTPSTRAP\\[0\\])"]
     #[inline(always)]
-    pub fn enbl_sec_boot_by_otpstrap_or_pin_strap_hlink_otpstrap0(
+    pub fn enbl_sec_boot_by_otpstrap_or_pin_strap_otpstrap0(
         &self,
-    ) -> EnblSecBootByOtpstrapOrPinStrapHlinkOtpstrap0R {
-        EnblSecBootByOtpstrapOrPinStrapHlinkOtpstrap0R::new(((self.bits >> 1) & 1) != 0)
+    ) -> EnblSecBootByOtpstrapOrPinStrapOtpstrap0R {
+        EnblSecBootByOtpstrapOrPinStrapOtpstrap0R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - Mirror Bit of ORPSTRAP\\[22\\]"]
     #[inline(always)]
@@ -117,10 +117,10 @@ impl W {
     }
     #[doc = "Bit 1 - Enable Secure Boot by OTP Strap or Pin Strap (hlinkOTPSTRAP\\[0\\])"]
     #[inline(always)]
-    pub fn enbl_sec_boot_by_otpstrap_or_pin_strap_hlink_otpstrap0(
+    pub fn enbl_sec_boot_by_otpstrap_or_pin_strap_otpstrap0(
         &mut self,
-    ) -> EnblSecBootByOtpstrapOrPinStrapHlinkOtpstrap0W<Scu51cSpec> {
-        EnblSecBootByOtpstrapOrPinStrapHlinkOtpstrap0W::new(self, 1)
+    ) -> EnblSecBootByOtpstrapOrPinStrapOtpstrap0W<Scu51cSpec> {
+        EnblSecBootByOtpstrapOrPinStrapOtpstrap0W::new(self, 1)
     }
     #[doc = "Bit 2 - Mirror Bit of ORPSTRAP\\[22\\]"]
     #[inline(always)]
