@@ -28,6 +28,14 @@ pub type EnblIntofWrBlockW<'a, REG> = crate::BitWriter<'a, REG>;
 pub type EnblIntofReadBlockR = crate::BitReader;
 #[doc = "Field `EnblINTOfReadBlock` writer - Enable Interrupt of Read Block"]
 pub type EnblIntofReadBlockW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblINTOfOverSpeed` reader - Enable Interrupt of Over Speed"]
+pub type EnblIntofOverSpeedR = crate::BitReader;
+#[doc = "Field `EnblINTOfOverSpeed` writer - Enable Interrupt of Over Speed"]
+pub type EnblIntofOverSpeedW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblPushPullMode` reader - Enable push pull mode"]
+pub type EnblPushPullModeR = crate::BitReader;
+#[doc = "Field `EnblPushPullMode` writer - Enable push pull mode"]
+pub type EnblPushPullModeW<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Interrupt Status of Command Block"]
     #[inline(always)]
@@ -64,6 +72,16 @@ impl R {
     pub fn enbl_intof_read_block(&self) -> EnblIntofReadBlockR {
         EnblIntofReadBlockR::new(((self.bits >> 18) & 1) != 0)
     }
+    #[doc = "Bit 19 - Enable Interrupt of Over Speed"]
+    #[inline(always)]
+    pub fn enbl_intof_over_speed(&self) -> EnblIntofOverSpeedR {
+        EnblIntofOverSpeedR::new(((self.bits >> 19) & 1) != 0)
+    }
+    #[doc = "Bit 31 - Enable push pull mode"]
+    #[inline(always)]
+    pub fn enbl_push_pull_mode(&self) -> EnblPushPullModeR {
+        EnblPushPullModeR::new(((self.bits >> 31) & 1) != 0)
+    }
 }
 impl W {
     #[doc = "Bit 0 - Interrupt Status of Command Block"]
@@ -95,6 +113,16 @@ impl W {
     #[inline(always)]
     pub fn enbl_intof_read_block(&mut self) -> EnblIntofReadBlockW<Spipf004Spec> {
         EnblIntofReadBlockW::new(self, 18)
+    }
+    #[doc = "Bit 19 - Enable Interrupt of Over Speed"]
+    #[inline(always)]
+    pub fn enbl_intof_over_speed(&mut self) -> EnblIntofOverSpeedW<Spipf004Spec> {
+        EnblIntofOverSpeedW::new(self, 19)
+    }
+    #[doc = "Bit 31 - Enable push pull mode"]
+    #[inline(always)]
+    pub fn enbl_push_pull_mode(&mut self) -> EnblPushPullModeW<Spipf004Spec> {
+        EnblPushPullModeW::new(self, 31)
     }
 }
 #[doc = "Interrupt Enable and Status Register\n\nYou can [`read`](crate::Reg::read) this register and get [`spipf004::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`spipf004::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

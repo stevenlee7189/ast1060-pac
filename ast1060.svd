@@ -2167,369 +2167,11 @@ permissions and limitations under the License.
 					</fields>
 				</register>
 				<register>
-					<name>SPI120</name>
+					<dim>12</dim>
+					<dimIncrement>4</dimIncrement>
+					<name>SPIRFQCD[%s]</name>
 					<description>Fully Qualified Command</description>
 					<addressOffset>0x120</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0x8000FFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>EnblEntry8</name>
-							<description>Enable Entry</description>
-							<bitRange>[31:31]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>Reserved8</name>
-							<description>Reserved</description>
-							<bitRange>[30:16]</bitRange>
-							<access>read-only</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd8</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[15:8]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd17</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[7:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI124</name>
-					<description>Fully Qualified Command</description>
-					<addressOffset>0x124</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0x8000FFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>EnblEntry8</name>
-							<description>Enable Entry</description>
-							<bitRange>[31:31]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>Reserved8</name>
-							<description>Reserved</description>
-							<bitRange>[30:16]</bitRange>
-							<access>read-only</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd8</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[15:8]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd17</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[7:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI128</name>
-					<description>Fully Qualified Command</description>
-					<addressOffset>0x128</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0x8000FFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>EnblEntry8</name>
-							<description>Enable Entry</description>
-							<bitRange>[31:31]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>Reserved8</name>
-							<description>Reserved</description>
-							<bitRange>[30:16]</bitRange>
-							<access>read-only</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd8</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[15:8]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd17</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[7:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI12C</name>
-					<description>Fully Qualified Command</description>
-					<addressOffset>0x12c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0x8000FFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>EnblEntry8</name>
-							<description>Enable Entry</description>
-							<bitRange>[31:31]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>Reserved8</name>
-							<description>Reserved</description>
-							<bitRange>[30:16]</bitRange>
-							<access>read-only</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd8</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[15:8]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd17</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[7:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI130</name>
-					<description>Fully Qualified Command</description>
-					<addressOffset>0x130</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0x8000FFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>EnblEntry8</name>
-							<description>Enable Entry</description>
-							<bitRange>[31:31]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>Reserved8</name>
-							<description>Reserved</description>
-							<bitRange>[30:16]</bitRange>
-							<access>read-only</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd8</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[15:8]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd17</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[7:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI134</name>
-					<description>Fully Qualified Command</description>
-					<addressOffset>0x134</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0x8000FFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>EnblEntry8</name>
-							<description>Enable Entry</description>
-							<bitRange>[31:31]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>Reserved8</name>
-							<description>Reserved</description>
-							<bitRange>[30:16]</bitRange>
-							<access>read-only</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd8</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[15:8]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd17</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[7:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI138</name>
-					<description>Fully Qualified Command</description>
-					<addressOffset>0x138</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0x8000FFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>EnblEntry8</name>
-							<description>Enable Entry</description>
-							<bitRange>[31:31]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>Reserved8</name>
-							<description>Reserved</description>
-							<bitRange>[30:16]</bitRange>
-							<access>read-only</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd8</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[15:8]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd17</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[7:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI13C</name>
-					<description>Fully Qualified Command</description>
-					<addressOffset>0x13c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0x8000FFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>EnblEntry8</name>
-							<description>Enable Entry</description>
-							<bitRange>[31:31]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>Reserved8</name>
-							<description>Reserved</description>
-							<bitRange>[30:16]</bitRange>
-							<access>read-only</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd8</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[15:8]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd17</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[7:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI140</name>
-					<description>Fully Qualified Command</description>
-					<addressOffset>0x140</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0x8000FFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>EnblEntry8</name>
-							<description>Enable Entry</description>
-							<bitRange>[31:31]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>Reserved8</name>
-							<description>Reserved</description>
-							<bitRange>[30:16]</bitRange>
-							<access>read-only</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd8</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[15:8]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd17</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[7:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI144</name>
-					<description>Fully Qualified Command</description>
-					<addressOffset>0x144</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0x8000FFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>EnblEntry8</name>
-							<description>Enable Entry</description>
-							<bitRange>[31:31]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>Reserved8</name>
-							<description>Reserved</description>
-							<bitRange>[30:16]</bitRange>
-							<access>read-only</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd8</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[15:8]</bitRange>
-							<access>read-write</access>
-						</field>
-						<field>
-							<name>FullyQualifiedCmd17</name>
-							<description>Fully qualified Command</description>
-							<bitRange>[7:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI148</name>
-					<description>Fully Qualified Command</description>
-					<addressOffset>0x148</addressOffset>
 					<size>32</size>
 					<access>read-write</access>
 					<resetValue>0x00000000</resetValue>
@@ -3643,1143 +3285,11 @@ permissions and limitations under the License.
 					</fields>
 				</register>
 				<register>
-					<name>SPI200</name>
+					<dim>64</dim>
+					<dimIncrement>4</dimIncrement>
+					<name>SPIRBUF[%s]</name>
 					<description>DMA Buffer R/W Port</description>
 					<addressOffset>0x200</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI204</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x204</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI208</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x208</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI20C</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x20c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI210</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x210</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI214</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x214</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI218</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x218</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI21C</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x21c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI220</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x220</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI224</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x224</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI228</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x228</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI22C</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x22c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI230</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x230</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI234</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x234</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI238</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x238</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI23C</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x23c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI240</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x240</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI244</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x244</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI248</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x248</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI24C</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x24c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI250</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x250</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI254</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x254</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI258</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x258</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI25C</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x25c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI260</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x260</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI264</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x264</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI268</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x268</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI26C</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x26c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI270</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x270</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI274</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x274</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI278</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x278</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI27C</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x27c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI280</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x280</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI284</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x284</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI288</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x288</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI28C</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x28c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI290</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x290</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI294</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x294</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI298</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x298</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI29C</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x29c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2A0</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2a0</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2A4</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2a4</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2A8</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2a8</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2AC</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2ac</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2B0</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2b0</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2B4</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2b4</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2B8</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2b8</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2BC</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2bc</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2C0</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2c0</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2C4</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2c4</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2C8</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2c8</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2CC</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2cc</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2D0</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2d0</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2D4</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2d4</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2D8</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2d8</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2DC</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2dc</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2E0</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2e0</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2E4</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2e4</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2E8</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2e8</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2EC</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2ec</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2F0</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2f0</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2F4</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2f4</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2F8</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2f8</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0x00000000</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>DMABufferReadwrPort</name>
-							<description>DMA Buffer read/write port</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>SPI2FC</name>
-					<description>DMA Buffer R/W Port</description>
-					<addressOffset>0x2fc</addressOffset>
 					<size>32</size>
 					<access>read-write</access>
 					<resetValue>0x00000000</resetValue>
@@ -32285,13 +30795,25 @@ permissions and limitations under the License.
 					<size>32</size>
 					<access>read-write</access>
 					<resetValue>0x0</resetValue>
-					<resetMask>0x00070007</resetMask>
+					<resetMask>0x800F0007</resetMask>
 
 					<fields>
 						<field>
+							<name>EnblPushPullMode</name>
+							<description>Enable push pull mode</description>
+							<bitRange>[31:31]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
 							<name>Reserved</name>
 							<description>Reserved</description>
-							<bitRange>[31:19]</bitRange>
+							<bitRange>[30:20]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblINTOfOverSpeed</name>
+							<description>Enable Interrupt of Over Speed</description>
+							<bitRange>[19:19]</bitRange>
 							<access>read-write</access>
 						</field>
 						<field>
@@ -33841,6 +32363,4122 @@ permissions and limitations under the License.
 			<name>wdt3</name>
 			<description>wdt interface </description>
 			<baseAddress>0x7e785180</baseAddress>
+		</peripheral>
+
+		<peripheral>
+			<name>fmc</name>
+			<version>1.0</version>
+			<description>fmc</description>
+			<groupName>fmc</groupName>
+			<baseAddress>0x7e620000</baseAddress>
+			<access>read-write</access>
+
+			<addressBlock>
+				<offset>0x0</offset>
+				<size>0x300</size>
+				<usage>registers</usage>
+			</addressBlock>
+
+			<interrupt>
+				<name>fmc</name>
+				<value>39</value>
+			</interrupt>
+
+			<registers>
+				<register>
+					<name>FMC000</name>
+					<description>CE Type Setting Register</description>
+					<addressOffset>0x0</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x2A</resetValue>
+					<resetMask>0x0003000F</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:18]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>EnblCE1DefaultWrType</name>
+							<description>Enable CE1 default write type</description>
+							<bitRange>[17:17]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblCE0DefaultWrType</name>
+							<description>Enable CE0 default write type</description>
+							<bitRange>[16:16]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>CEx_Is_Default_At_Write_Disable_Mode</name>
+									<description>CEx is default at write disable mode</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>CEx_Is_Default_At_Write_Enable_Mode</name>
+									<description>CEx is default at write enable mode</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved01</name>
+							<description>Reserved (0)</description>
+							<bitRange>[15:4]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>CE1FlashTypeSel</name>
+							<description>CE1 flash type selection</description>
+							<bitRange>[3:2]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>CE0FlashTypeSel</name>
+							<description>CE0 flash type selection</description>
+							<bitRange>[1:0]</bitRange>
+							<access>read-only</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Select_SPI_Flash_Type</name>
+									<description>Select SPI flash type</description>
+									<value>0b10</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC004</name>
+					<description>CE Control Register</description>
+					<addressOffset>0x4</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00002A00</resetValue>
+					<resetMask>0x00000F33</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:12]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SelectCE1MinimumInactiveTimingTCSH</name>
+							<description>Select CE1 minimum inactive timing (tCSH)</description>
+							<bitRange>[11:10]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SelectCE0MinimumInactiveTimingTCSH</name>
+							<description>Select CE0 minimum inactive timing (tCSH)</description>
+							<bitRange>[9:8]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>16_X_HCLK</name>
+									<description>16 x HCLK</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>24_X_HCLK</name>
+									<description>24 x HCLK</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>32_X_HCLK</name>
+									<description>32 x HCLK</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>40_X_HCLK</name>
+									<description>40 x HCLK</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved01</name>
+							<description>Reserved (0)</description>
+							<bitRange>[7:6]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>CE14BAddrAutoReadCmdSel</name>
+							<description>CE1 4B address Auto-Read command selection</description>
+							<bitRange>[5:5]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>CE04BAddrAutoReadCmdSel</name>
+							<description>CE0 4B address Auto-Read command selection</description>
+							<bitRange>[4:4]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Use_0x03_Command</name>
+									<description>use 0x03 command</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Use_0x13_Command</name>
+									<description>use 0x13 command</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved02</name>
+							<description>Reserved (0)</description>
+							<bitRange>[3:2]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>CE1SPIAddrModeSel</name>
+							<description>CE1 SPI address mode selection</description>
+							<bitRange>[1:1]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>CE0SPIAddrModeSel</name>
+							<description>CE0 SPI address mode selection</description>
+							<bitRange>[0:0]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>3B3_Bytes_Smaller_Than_Or_Equal_To_16MB</name>
+									<description>(3B)3 bytes (smaller than or equal to 16MB)</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>4B4_Bytes_Larger_Than_16MB</name>
+									<description>(4B)4 bytes (larger than 16MB)</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC008</name>
+					<description>Interrupt Control and Status Register</description>
+					<addressOffset>0x8</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x0</resetValue>
+					<resetMask>0x00003E1E</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:14]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>DMABufferModeFIFOFullStatus</name>
+							<description>DMA Buffer Mode FIFO Full Status</description>
+							<bitRange>[13:13]</bitRange>
+							<access>read-only</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>FIFO_Is_Nonfull</name>
+									<description>FIFO is non-full</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>FIFO_Is_Full</name>
+									<description>FIFO is full</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>DMABufferModeFIFOEmptyStatus</name>
+							<description>DMA Buffer Mode FIFO Empty Status</description>
+							<bitRange>[12:12]</bitRange>
+							<access>read-only</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>FIFO_Is_Nonempty</name>
+									<description>FIFO is non-empty</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>FIFO_Is_Empty</name>
+									<description>FIFO is empty</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>DMAStatus</name>
+							<description>DMA Status</description>
+							<bitRange>[11:11]</bitRange>
+							<access>read-only</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Busy_When_DMA_Was_Enabled_Or_Idle_When_DMA_Was_Disabled</name>
+									<description>Busy when DMA was enabled, or Idle when DMA was disabled.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>DMA_Finish</name>
+									<description>DMA Finish</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>SPICmdAbortStatus</name>
+							<description>SPI Command Abort Status</description>
+							<bitRange>[10:10]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SPIWrAddrProtectedStatus</name>
+							<description>SPI Write Address Protected Status</description>
+							<bitRange>[9:9]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved01</name>
+							<description>Reserved (0)</description>
+							<bitRange>[8:5]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>DMABufferModeFIFOFullEmptyINTEnbl</name>
+							<description>DMA Buffer Mode FIFO Full/Empty Interrupt Enable</description>
+							<bitRange>[4:4]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DMAINTEnbl</name>
+							<description>DMA Interrupt Enable</description>
+							<bitRange>[3:3]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SPICmdAbortINTEnbl</name>
+							<description>SPI Command Abort Interrupt Enable</description>
+							<bitRange>[2:2]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SPIWrAddrProtectedINTEnbl</name>
+							<description>SPI Write Address Protected Interrupt Enable</description>
+							<bitRange>[1:1]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Enable</name>
+									<description>Enable</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved02</name>
+							<description>Reserved (0)</description>
+							<bitRange>[0:0]</bitRange>
+							<access>read-only</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC00C</name>
+					<description>Command Control Register</description>
+					<addressOffset>0xc</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x0</resetValue>
+					<resetMask>0x000000FF</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:8]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SPIAddrByteLaneDisable</name>
+							<description>SPI Address Byte lane disable</description>
+							<bitRange>[7:4]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable_Address_Byte_0</name>
+									<description>disable address byte 0</description>
+									<value>0bxxx1</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Disable_Address_Byte_1</name>
+									<description>disable address byte 1</description>
+									<value>0bxx1x</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Disable_Address_Byte_2</name>
+									<description>disable address byte 2</description>
+									<value>0bx1xx</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Disable_Address_Byte_3_Only_Valid_For_4byte_Address_Mode</name>
+									<description>disable address byte 3 (only valid for 4-byte address mode)</description>
+									<value>0b1xxx</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>DataByteLaneDisable</name>
+							<description>Data Byte lane disable</description>
+							<bitRange>[3:0]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable_Data_Byte_0</name>
+									<description>disable data byte 0</description>
+									<value>0bxxx1</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Disable_Data_Byte_1</name>
+									<description>disable data byte 1</description>
+									<value>0bxx1x</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Disable_Data_Byte_2</name>
+									<description>disable data byte 2</description>
+									<value>0bx1xx</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Disable_Data_Byte_3</name>
+									<description>disable data byte 3</description>
+									<value>0b1xxx</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC010</name>
+					<description>SPI CE0 Control Register</description>
+					<addressOffset>0x10</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000400</resetValue>
+					<resetMask>0xFFFFDFE7</resetMask>
+
+					<fields>
+						<field>
+							<name>IOMode</name>
+							<description>IO Mode</description>
+							<bitRange>[31:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Single_Bit</name>
+									<description>single bit.</description>
+									<value>0b0000</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Dual_Bit_Readwrite_Data_Cycle_Only</name>
+									<description>dual bit read/write, data cycle only.</description>
+									<value>0b0010</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Dual_Bit_Readwrite_Including_Address_And_Dummy_Byte_Cycle</name>
+									<description>dual bit read/write, including address and dummy byte cycle.</description>
+									<value>0b0011</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Quad_Bit_Readwrite_Data_Cycle_Only</name>
+									<description>quad bit read/write, data cycle only.</description>
+									<value>0b0100</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Quad_Bit_Readwrite_Including_Address_And_Dummy_Byte_Cycle</name>
+									<description>quad bit read/write, including address and dummy byte cycle.</description>
+									<value>0b0101</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>QPI_Mode_Quad_Bit_On_Commandaddressdata_Cycles</name>
+									<description>QPI mode, quad bit on command/address/data cycles.</description>
+									<value>0b1xxx</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>SPIBaseClkSel</name>
+							<description>SPI base clock selection</description>
+							<bitRange>[27:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Baseclk__0___HCLK</name>
+									<description>baseclk = 0  * HCLK</description>
+									<value>0b0000</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__16__HCLK</name>
+									<description>baseclk = 16 * HCLK</description>
+									<value>0b0001</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__32__HCLK</name>
+									<description>baseclk = 32 * HCLK</description>
+									<value>0b0010</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__48__HCLK</name>
+									<description>baseclk = 48 * HCLK</description>
+									<value>0b0011</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__240__HCLK</name>
+									<description>baseclk = 240 * HCLK</description>
+									<value>0b1111</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>SPICmd</name>
+							<description>SPI Command</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DummyCycleCmdOutput</name>
+							<description>Dummy cycle command output</description>
+							<bitRange>[15:15]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Dummy_Cycle_No_Command_Output</name>
+									<description>dummy cycle no command output</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>First_Dummy_Cycle_Has_Command_Output</name>
+									<description>first dummy cycle has command output</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>DummyCyclesBeforeDataForNormalReadCmdHighBits</name>
+							<description>Dummy cycles before data for Normal-Read command (high bits)</description>
+							<bitRange>[14:14]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[13:13]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DisSPIFlashReadwrCmdMerge</name>
+							<description>Disable SPI flash read/write command merge</description>
+							<bitRange>[12:12]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Enable</name>
+									<description>Enable</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Disable_With_Performance_Penalty</name>
+									<description>Disable (with performance penalty)</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>SPIClkFrequencySelTCK</name>
+							<description>SPI clock frequency selection (t-CK)</description>
+							<bitRange>[11:8]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Baseclk__16__HCLK</name>
+									<description>baseclk + (16 * HCLK)</description>
+									<value>0b0000</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__14__HCLK</name>
+									<description>baseclk + (14 * HCLK)</description>
+									<value>0b0001</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__12__HCLK</name>
+									<description>baseclk + (12 * HCLK)</description>
+									<value>0b0010</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__10__HCLK</name>
+									<description>baseclk + (10 * HCLK)</description>
+									<value>0b0011</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__8__HCLKregdefmark</name>
+									<description>baseclk + (~8 * HCLK)\regdefmark</description>
+									<value>0b0100</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__6__HCLK</name>
+									<description>baseclk + (~6 * HCLK)</description>
+									<value>0b0101</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__4__HCLK</name>
+									<description>baseclk + (~4 * HCLK)</description>
+									<value>0b0110</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__2__HCLK</name>
+									<description>baseclk + (~2 * HCLK)</description>
+									<value>0b0111</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__15__HCLK</name>
+									<description>baseclk + (15 * HCLK)</description>
+									<value>0b1000</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__13__HCLK</name>
+									<description>baseclk + (13 * HCLK)</description>
+									<value>0b1001</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__11__HCLK</name>
+									<description>baseclk + (11 * HCLK)</description>
+									<value>0b1010</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__9__HCLK</name>
+									<description>baseclk + (~9 * HCLK)</description>
+									<value>0b1011</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__7__HCLK</name>
+									<description>baseclk + (~7 * HCLK)</description>
+									<value>0b1100</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__5__HCLK</name>
+									<description>baseclk + (~5 * HCLK)</description>
+									<value>0b1101</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__3__HCLK</name>
+									<description>baseclk + (~3 * HCLK)</description>
+									<value>0b1110</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__1__HCLK_Only_Valid_For_Baseclk_Selection_Not_Equal_To_0</name>
+									<description>baseclk + (~1 * HCLK) (only valid for baseclk selection not equal to 0)</description>
+									<value>0b1111</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>DummyCyclesBeforeDataForNormalReadCmdLowBits</name>
+							<description>Dummy cycles before data for Normal-Read command (low bits)</description>
+							<bitRange>[7:6]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>MSBLSBFirstCtrl</name>
+							<description>MSB/LSB first control</description>
+							<bitRange>[5:5]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>MSB_First_HtextAdefault_For_Boot_Code</name>
+									<description>MSB First \htextA{(default for boot code)</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>LSB_First</name>
+									<description>LSB First</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved2</name>
+							<description>Reserved</description>
+							<bitRange>[4:4]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>ReservedEnblDualDataInputMode</name>
+							<description>Reserved Enable dual data input mode</description>
+							<bitRange>[3:3]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>28__010_Mode</name>
+									<description>28] = "010" mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>CEStopActiveCtrl</name>
+							<description>CE# Stop Active Control</description>
+							<bitRange>[2:2]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>FMCCMDMODECmdMode</name>
+							<description>FMCCMDMODECommand Mode</description>
+							<bitRange>[1:0]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>AutoRead_0x030x13__Address__Read_Data_1234_Bytes</name>
+									<description>Auto-Read (0x03/0x13 + Address + Read data [1/2/3/4 bytes])</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>NormalRead_CMD__Address__Read_Data_1234_Bytes</name>
+									<description>Normal-Read (CMD + Address + Read data [1/2/3/4 bytes])</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>NormalWrite_CMD__Address__Write_Data_1234_Bytes</name>
+									<description>Normal-Write (CMD + Address + Write data [1/2/3/4 bytes])</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>UserMode_Readwrite_Data_1234_Bytes</name>
+									<description>User-Mode (Read/write data [1/2/3/4 bytes])</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC014</name>
+					<description>SPI CE1 Control Register</description>
+					<addressOffset>0x14</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000400</resetValue>
+					<resetMask>0xFFFFDFE7</resetMask>
+
+					<fields>
+						<field>
+							<name>IOMode1</name>
+							<description>IO Mode</description>
+							<bitRange>[31:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Single_Bit</name>
+									<description>single bit.</description>
+									<value>0b0000</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Dual_Bit_Readwrite_Data_Cycle_Only</name>
+									<description>dual bit read/write, data cycle only.</description>
+									<value>0b0010</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Dual_Bit_Readwrite_Including_Address_And_Dummy_Byte_Cycle</name>
+									<description>dual bit read/write, including address and dummy byte cycle.</description>
+									<value>0b0011</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Quad_Bit_Readwrite_Data_Cycle_Only</name>
+									<description>quad bit read/write, data cycle only.</description>
+									<value>0b0100</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Quad_Bit_Readwrite_Including_Address_And_Dummy_Byte_Cycle</name>
+									<description>quad bit read/write, including address and dummy byte cycle.</description>
+									<value>0b0101</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>QPI_Mode_Quad_Bit_On_Commandaddressdata_Cycles</name>
+									<description>QPI mode, quad bit on command/address/data cycles.</description>
+									<value>0b1xxx</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>SPIBaseClkSel1</name>
+							<description>SPI base clock selection</description>
+							<bitRange>[27:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Baseclk__0___HCLK</name>
+									<description>baseclk = 0  * HCLK</description>
+									<value>0b0000</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__16__HCLK</name>
+									<description>baseclk = 16 * HCLK</description>
+									<value>0b0001</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__32__HCLK</name>
+									<description>baseclk = 32 * HCLK</description>
+									<value>0b0010</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__48__HCLK</name>
+									<description>baseclk = 48 * HCLK</description>
+									<value>0b0011</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__240__HCLK</name>
+									<description>baseclk = 240 * HCLK</description>
+									<value>0b1111</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>SPICmd1</name>
+							<description>SPI Command</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DummyCycleCmdOutput1</name>
+							<description>Dummy cycle command output</description>
+							<bitRange>[15:15]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Dummy_Cycle_No_Command_Output</name>
+									<description>dummy cycle no command output</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>First_Dummy_Cycle_Has_Command_Output</name>
+									<description>first dummy cycle has command output</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>DummyCyclesBeforeDataForNormalReadCmdHighBits1</name>
+							<description>Dummy cycles before data for Normal-Read command (high bits)</description>
+							<bitRange>[14:14]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved1</name>
+							<description>Reserved</description>
+							<bitRange>[13:13]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DisSPIFlashReadwrCmdMerge1</name>
+							<description>Disable SPI flash read/write command merge</description>
+							<bitRange>[12:12]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Enable</name>
+									<description>Enable</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Disable_With_Performance_Penalty</name>
+									<description>Disable (with performance penalty)</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>SPIClkFrequencySelTCK1</name>
+							<description>SPI clock frequency selection (t-CK)</description>
+							<bitRange>[11:8]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Baseclk__16__HCLK</name>
+									<description>baseclk + (16 * HCLK)</description>
+									<value>0b0000</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__14__HCLK</name>
+									<description>baseclk + (14 * HCLK)</description>
+									<value>0b0001</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__12__HCLK</name>
+									<description>baseclk + (12 * HCLK)</description>
+									<value>0b0010</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__10__HCLK</name>
+									<description>baseclk + (10 * HCLK)</description>
+									<value>0b0011</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__8__HCLKregdefmark</name>
+									<description>baseclk + (~8 * HCLK)\regdefmark</description>
+									<value>0b0100</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__6__HCLK</name>
+									<description>baseclk + (~6 * HCLK)</description>
+									<value>0b0101</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__4__HCLK</name>
+									<description>baseclk + (~4 * HCLK)</description>
+									<value>0b0110</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__2__HCLK</name>
+									<description>baseclk + (~2 * HCLK)</description>
+									<value>0b0111</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__15__HCLK</name>
+									<description>baseclk + (15 * HCLK)</description>
+									<value>0b1000</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__13__HCLK</name>
+									<description>baseclk + (13 * HCLK)</description>
+									<value>0b1001</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__11__HCLK</name>
+									<description>baseclk + (11 * HCLK)</description>
+									<value>0b1010</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__9__HCLK</name>
+									<description>baseclk + (~9 * HCLK)</description>
+									<value>0b1011</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__7__HCLK</name>
+									<description>baseclk + (~7 * HCLK)</description>
+									<value>0b1100</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__5__HCLK</name>
+									<description>baseclk + (~5 * HCLK)</description>
+									<value>0b1101</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__3__HCLK</name>
+									<description>baseclk + (~3 * HCLK)</description>
+									<value>0b1110</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Baseclk__1__HCLK_Only_Valid_For_Baseclk_Selection_Not_Equal_To_0</name>
+									<description>baseclk + (~1 * HCLK) (only valid for baseclk selection not equal to 0)</description>
+									<value>0b1111</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>DummyCyclesBeforeDataForNormalReadCmdLowBits1</name>
+							<description>Dummy cycles before data for Normal-Read command (low bits)</description>
+							<bitRange>[7:6]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>MSBLSBFirstCtrl1</name>
+							<description>MSB/LSB first control</description>
+							<bitRange>[5:5]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>MSB_First_HtextAdefault_For_Boot_Code</name>
+									<description>MSB First \htextA{(default for boot code)</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>LSB_First</name>
+									<description>LSB First</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved3</name>
+							<description>Reserved</description>
+							<bitRange>[4:4]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>ReservedEnblDualDataInputMode1</name>
+							<description>Reserved Enable dual data input mode</description>
+							<bitRange>[3:3]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>28__010_Mode</name>
+									<description>28] = "010" mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>CEStopActiveCtrl1</name>
+							<description>CE# Stop Active Control</description>
+							<bitRange>[2:2]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>FMCCMDMODECmdMode1</name>
+							<description>FMCCMDMODECommand Mode</description>
+							<bitRange>[1:0]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>AutoRead_0x030x13__Address__Read_Data_1234_Bytes</name>
+									<description>Auto-Read (0x03/0x13 + Address + Read data [1/2/3/4 bytes])</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>NormalRead_CMD__Address__Read_Data_1234_Bytes</name>
+									<description>Normal-Read (CMD + Address + Read data [1/2/3/4 bytes])</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>NormalWrite_CMD__Address__Write_Data_1234_Bytes</name>
+									<description>Normal-Write (CMD + Address + Write data [1/2/3/4 bytes])</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>UserMode_Readwrite_Data_1234_Bytes</name>
+									<description>User-Mode (Read/write data [1/2/3/4 bytes])</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC030</name>
+					<description>CE0 Address Decoding Range Register</description>
+					<addressOffset>0x30</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x07F80000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>EndAddrA3116</name>
+							<description>End address A[31:16]</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>StartAddrA3116</name>
+							<description>Start address A[31:16]</description>
+							<bitRange>[15:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC034</name>
+					<description>CE1 Address Decoding Range Register</description>
+					<addressOffset>0x34</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>EndAddrA31161</name>
+							<description>End address A[31:16]</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>StartAddrA31161</name>
+							<description>Start address A[31:16]</description>
+							<bitRange>[15:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC050</name>
+					<description>Auto Soft-Reset Command Control</description>
+					<addressOffset>0x50</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0x0000FF07</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>LatestReadSPIStsReg</name>
+							<description>Latest read SPI status register</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>Reserved01</name>
+							<description>Reserved (0)</description>
+							<bitRange>[7:3]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>QPIModeForRstCmd</name>
+							<description>QPI mode for reset command</description>
+							<bitRange>[2:2]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>EnblWaitSPIWIPIdle</name>
+							<description>Enable wait SPI WIP idle</description>
+							<bitRange>[1:1]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblGenerateSoftRstCmd</name>
+							<description>Enable generate soft-reset command</description>
+							<bitRange>[0:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC054</name>
+					<description>SPI Dummy Cycle Data Register</description>
+					<addressOffset>0x54</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0x000000FF</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:8]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SPIDummyCycleOutputData</name>
+							<description>SPI dummy cycle output data</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC060</name>
+					<description>FMC\_WDT1 Control/Status Register for Address Mode Detection</description>
+					<addressOffset>0x60</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0x00000F01</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:12]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>WDActiveEventCounter</name>
+							<description>Watchdog active event counter</description>
+							<bitRange>[11:8]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>Reserved01</name>
+							<description>Reserved (0)</description>
+							<bitRange>[7:1]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>EnblWatchdog</name>
+							<description>Enable watchdog</description>
+							<bitRange>[0:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC064</name>
+					<description>FMC\_WDT2 Control/Status Register for Alternate Boot</description>
+					<addressOffset>0x64</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0x0000FF71</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>WDActiveEventCounter</name>
+							<description>Watchdog active event counter</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>Reserved01</name>
+							<description>Reserved (0)</description>
+							<bitRange>[7:7]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>AlternateBootModeThatDefinedByOTP</name>
+							<description>Alternate Boot Mode that defined by OTP</description>
+							<bitRange>[6:6]</bitRange>
+							<access>read-only</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>2_Chips_Mode</name>
+									<description>2 chips mode</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>1_Chip_Mode</name>
+									<description>1 chip mode</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>SingleChipBootModeSrcSelectIndicator</name>
+							<description>Single chip boot mode source select indicator</description>
+							<bitRange>[5:5]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>BootFlashSrcSelectIndicator</name>
+							<description>Boot flash source select indicator</description>
+							<bitRange>[4:4]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Boot_From_Primary_Source</name>
+									<description>boot from primary source</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Boot_From_Alternate_Source</name>
+									<description>boot from alternate source</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved02</name>
+							<description>Reserved (0)</description>
+							<bitRange>[3:1]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>EnblWatchdog</name>
+							<description>Enable watchdog</description>
+							<bitRange>[0:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC068</name>
+					<description>FMC\_WDT2 Timer Reload Value Register</description>
+					<addressOffset>0x68</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0xE0</resetValue>
+					<resetMask>0xFFFF1FFF</resetMask>
+
+					<fields>
+						<field>
+							<name>CounterValueSts</name>
+							<description>Counter value status</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[15:13]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>ReloadValueOfExpireTime</name>
+							<description>Reload value of expire time</description>
+							<bitRange>[12:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC06C</name>
+					<description>FMC\_WDT2 Timer Restart Register</description>
+					<addressOffset>0x6c</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0x0000FFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>RestartReg</name>
+							<description>Restart register</description>
+							<bitRange>[15:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC07C</name>
+					<description>DMA Buffer Mode Length Register</description>
+					<addressOffset>0x7c</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>FIFOLengthStatus</name>
+							<description>FIFO Length Status</description>
+							<bitRange>[6:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC080</name>
+					<description>DMA Control/Status Register</description>
+					<addressOffset>0x80</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0x000FFF1F</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:20]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SPIClkFrequencySetting</name>
+							<description>SPI clock frequency setting</description>
+							<bitRange>[19:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SPIReadDataInputDelayCycleSetting</name>
+							<description>SPI read data input delay cycle setting</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved01</name>
+							<description>Reserved (0)</description>
+							<bitRange>[7:5]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>DMABufferMode</name>
+							<description>DMA Buffer Mode</description>
+							<bitRange>[4:4]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Memory_Mode_Transfer_Tofrom_DRAMSRAM</name>
+									<description>Memory mode, transfer to/from DRAM/SRAM.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Buffer_Mode_Transfer_Tofrom_DMA_Buffer_The_DMA_Buffer_Works_As_FIFO_Mode_For_Data_Transfer_And_DMA_Will_Stop_Temporarily_When_FIFO_Is_Empty_Or_Full</name>
+									<description>Buffer mode, transfer to/from DMA buffer. The DMA buffer works as FIFO mode for data transfer, and DMA will stop temporarily when FIFO is empty or full.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>CalibrationMode</name>
+							<description>Calibration Mode</description>
+							<bitRange>[3:3]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Normal_Mode</name>
+									<description>Normal mode</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Calibration_Mode_At_This_Mode_SPI_Clock_Rate_And_Read_Delay_Cycle_Parameters</name>
+									<description>Calibration mode. At this mode, SPI clock rate and read delay cycle parameters</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>CheckSumCalculationOnly</name>
+							<description>CheckSum Calculation Only</description>
+							<bitRange>[2:2]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Normal_DMA_Operation</name>
+									<description>Normal DMA operation</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Checksum_Accumulation_Only</name>
+									<description>Checksum accumulation only</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>DMADirection</name>
+							<description>DMA Direction</description>
+							<bitRange>[1:1]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Read_Flash_Move_From_Flash_To_External_Memory</name>
+									<description>Read flash, move from flash to external memory</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Write_Flash_Move_From_External_Memory_To_Flash</name>
+									<description>Write flash, move from external memory to flash</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>DMAEnbl</name>
+							<description>DMA Enable</description>
+							<bitRange>[0:0]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Enable_DMA_Operation</name>
+									<description>Enable DMA operation</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC084</name>
+					<description>DMA Flash Side Address</description>
+					<addressOffset>0x84</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0x0FFFFFFC</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[31:28]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>FlashSideStartAddr</name>
+							<description>Flash side start address</description>
+							<bitRange>[27:2]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved1</name>
+							<description>Reserved</description>
+							<bitRange>[1:0]</bitRange>
+							<access>read-only</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC088</name>
+					<description>DMA DRAM/SRAM Side Address</description>
+					<addressOffset>0x88</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFC</resetMask>
+
+					<fields>
+						<field>
+							<name>DRAMSideStartAddrMemoryModeOnly</name>
+							<description>DRAM side start address (Memory mode only)</description>
+							<bitRange>[31:2]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[1:0]</bitRange>
+							<access>read-only</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC08C</name>
+					<description>DMA Length Register</description>
+					<addressOffset>0x8c</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0x01FFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>DMALength</name>
+							<description>DMA Length</description>
+							<bitRange>[24:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC090</name>
+					<description>CheckSum Calculation Result</description>
+					<addressOffset>0x90</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>CheckSumCalculationResult</name>
+							<description>CheckSum Calculation Result</description>
+							<bitRange>[31:0]</bitRange>
+							<access>read-only</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC094</name>
+					<description>CE0 SPI Flash Read Timing Compensation</description>
+					<addressOffset>0x94</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>SPICLKHCLK5DelayCycleForDataInputLatchPoint</name>
+							<description>SPICLK = HCLK/5, delay cycle for data input latch point</description>
+							<bitRange>[31:24]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SPICLKHCLK4DelayCycleForDataInputLatchPoint</name>
+							<description>SPICLK = HCLK/4, delay cycle for data input latch point</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SPICLKHCLK3DelayCycleForDataInputLatchPoint</name>
+							<description>SPICLK = HCLK/3, delay cycle for data input latch point</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SPICLKHCLK2DelayCycleForDataInputLatchPoint</name>
+							<description>SPICLK = HCLK/2, delay cycle for data input latch point</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC098</name>
+					<description>CE1 SPI Flash Read Timing Compensation</description>
+					<addressOffset>0x98</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>SPICLKHCLK5DelayCycleForDataInputLatchPoint1</name>
+							<description>SPICLK = HCLK/5, delay cycle for data input latch point</description>
+							<bitRange>[31:24]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SPICLKHCLK4DelayCycleForDataInputLatchPoint1</name>
+							<description>SPICLK = HCLK/4, delay cycle for data input latch point</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SPICLKHCLK3DelayCycleForDataInputLatchPoint1</name>
+							<description>SPICLK = HCLK/3, delay cycle for data input latch point</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SPICLKHCLK2DelayCycleForDataInputLatchPoint1</name>
+							<description>SPICLK = HCLK/2, delay cycle for data input latch point</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC0A0</name>
+					<description>Command Filter Control Register</description>
+					<addressOffset>0xa0</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x80000000</resetValue>
+					<resetMask>0x80000003</resetMask>
+
+					<fields>
+						<field>
+							<name>Enbl0x03And0x13InFullyQualifiedCmdList</name>
+							<description>Enable 0x03 and 0x13 in Fully Qualified Command list</description>
+							<bitRange>[31:31]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[30:2]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>EnblReadwrCmdFilterForCE1</name>
+							<description>Enable read/write command filter for CE1</description>
+							<bitRange>[1:1]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblReadwrCmdFilterForCE0</name>
+							<description>Enable read/write command filter for CE0</description>
+							<bitRange>[0:0]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable_Filter_All_Commands_Are_Allowed</name>
+									<description>disable filter, all commands are allowed.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Enable_Filter_Only_Commands_Defined_In_HlinkFMC100_Sim_HlinkFMC17C_Are_Allowed</name>
+									<description>enable filter, only commands defined in \hlink{FMC100 $\sim$ \hlink{FMC17C are allowed.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC0A4</name>
+					<description>Write Address Filter Control Register</description>
+					<addressOffset>0xa4</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0x0000FFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>ModeOfWrAddrFilter8</name>
+							<description>Mode of write address filter \#8</description>
+							<bitRange>[15:14]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>ModeOfWrAddrFilter7</name>
+							<description>Mode of write address filter \#7</description>
+							<bitRange>[13:12]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>ModeOfWrAddrFilter6</name>
+							<description>Mode of write address filter \#6</description>
+							<bitRange>[11:10]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>ModeOfWrAddrFilter5</name>
+							<description>Mode of write address filter #5</description>
+							<bitRange>[9:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>ModeOfWrAddrFilter4</name>
+							<description>Mode of write address filter #4</description>
+							<bitRange>[7:6]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>ModeOfWrAddrFilter3</name>
+							<description>Mode of write address filter #3</description>
+							<bitRange>[5:4]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>ModeOfWrAddrFilter2</name>
+							<description>Mode of write address filter #2</description>
+							<bitRange>[3:2]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>ModeOfWrAddrFilter1</name>
+							<description>Mode of write address filter #1</description>
+							<bitRange>[1:0]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>NOP</name>
+									<description>NOP</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Read_Only</name>
+									<description>Read only</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Write_Only</name>
+									<description>Write only</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Access_Disabled</name>
+									<description>Access disabled</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC0A8</name>
+					<description>Register Lock Control Register (SRST\#)</description>
+					<addressOffset>0xa8</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0x000007FF</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[31:11]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>LockFMCA4AndAddrFilterFromWrUntilRstBySRST</name>
+							<description>Lock FMCA4 and Address Filter from write until reset by SRST#</description>
+							<bitRange>[10:10]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMCA0AndFQCDAQCDFromWrUntilRstBySRST</name>
+							<description>Lock FMCA0 and FQCD/AQCD from write until reset by SRST#</description>
+							<bitRange>[9:9]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC94FMC98FMC9CFromWrUntilRstBySRST</name>
+							<description>Lock FMC94/FMC98/FMC9C from write until reset by SRST#</description>
+							<bitRange>[8:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC38FromWrUntilRstBySRST</name>
+							<description>Lock FMC38 from write until reset by SRST#</description>
+							<bitRange>[7:7]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC34FromWrUntilRstBySRST</name>
+							<description>Lock FMC34 from write until reset by SRST#</description>
+							<bitRange>[6:6]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC30FromWrUntilRstBySRST</name>
+							<description>Lock FMC30 from write until reset by SRST#</description>
+							<bitRange>[5:5]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC18FromWrUntilRstBySRST</name>
+							<description>Lock FMC18 from write until reset by SRST#</description>
+							<bitRange>[4:4]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC14FromWrUntilRstBySRST</name>
+							<description>Lock FMC14 from write until reset by SRST#</description>
+							<bitRange>[3:3]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC10FromWrUntilRstBySRST</name>
+							<description>Lock FMC10 from write until reset by SRST#</description>
+							<bitRange>[2:2]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC04FromWrUntilRstBySRST</name>
+							<description>Lock FMC04 from write until reset by SRST#</description>
+							<bitRange>[1:1]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC00FromWrUntilRstBySRST</name>
+							<description>Lock FMC00 from write until reset by SRST#</description>
+							<bitRange>[0:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC0AC</name>
+					<description>Register Lock Control Register (Watchdog)</description>
+					<addressOffset>0xac</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0x000007FF</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[31:11]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>LockFMCA4AndAddrFilterFromWrUntilRstByWatchdog</name>
+							<description>Lock FMCA4 and Address Filter from write until reset by watchdog</description>
+							<bitRange>[10:10]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMCA0AndFQCDAQCDFromWrUntilRstByWatchdog</name>
+							<description>Lock FMCA0 and FQCD/AQCD from write until reset by watchdog</description>
+							<bitRange>[9:9]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC94FMC98FMC9CFromWrUntilRstByWatchdog</name>
+							<description>Lock FMC94/FMC98/FMC9C from write until reset by watchdog</description>
+							<bitRange>[8:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC38FromWrUntilRstByWatchdog</name>
+							<description>Lock FMC38 from write until reset by watchdog</description>
+							<bitRange>[7:7]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC34FromWrUntilRstByWatchdog</name>
+							<description>Lock FMC34 from write until reset by watchdog</description>
+							<bitRange>[6:6]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC30FromWrUntilRstByWatchdog</name>
+							<description>Lock FMC30 from write until reset by watchdog</description>
+							<bitRange>[5:5]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC18FromWrUntilRstByWatchdog</name>
+							<description>Lock FMC18 from write until reset by watchdog</description>
+							<bitRange>[4:4]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC14FromWrUntilRstByWatchdog</name>
+							<description>Lock FMC14 from write until reset by watchdog</description>
+							<bitRange>[3:3]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC10FromWrUntilRstByWatchdog</name>
+							<description>Lock FMC10 from write until reset by watchdog</description>
+							<bitRange>[2:2]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC04FromWrUntilRstByWatchdog</name>
+							<description>Lock FMC04 from write until reset by watchdog</description>
+							<bitRange>[1:1]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>LockFMC00FromWrUntilRstByWatchdog</name>
+							<description>Lock FMC00 from write until reset by watchdog</description>
+							<bitRange>[0:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC0B0</name>
+					<description>Write Address Filter Register \#1</description>
+					<addressOffset>0xb0</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>SegmentsUpperBoundAddrBit2712</name>
+							<description>Segments Upper bound address bit[27:12]</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SegmentsLowerBoundAddrBit2712</name>
+							<description>Segments Lower bound address bit[27:12]</description>
+							<bitRange>[15:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC0B4</name>
+					<description>Write Address Filter Register \#2</description>
+					<addressOffset>0xb4</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>SegmentsUpperBoundAddrBit27121</name>
+							<description>Segments Upper bound address bit[27:12]</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SegmentsLowerBoundAddrBit27121</name>
+							<description>Segments Lower bound address bit[27:12]</description>
+							<bitRange>[15:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC0B8</name>
+					<description>Write Address Filter Register \#3</description>
+					<addressOffset>0xb8</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>SegmentsUpperBoundAddrBit27122</name>
+							<description>Segments Upper bound address bit[27:12]</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SegmentsLowerBoundAddrBit27122</name>
+							<description>Segments Lower bound address bit[27:12]</description>
+							<bitRange>[15:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC0BC</name>
+					<description>Write Address Filter Register \#4</description>
+					<addressOffset>0xbc</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>SegmentsUpperBoundAddrBit27123</name>
+							<description>Segments Upper bound address bit[27:12]</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SegmentsLowerBoundAddrBit27123</name>
+							<description>Segments Lower bound address bit[27:12]</description>
+							<bitRange>[15:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC0C0</name>
+					<description>Write Address Filter Register \#5</description>
+					<addressOffset>0xc0</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>SegmentsUpperBoundAddrBit27124</name>
+							<description>Segments Upper bound address bit[27:12]</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SegmentsLowerBoundAddrBit27124</name>
+							<description>Segments Lower bound address bit[27:12]</description>
+							<bitRange>[15:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC0C4</name>
+					<description>Write Address Filter Register \#6</description>
+					<addressOffset>0xc4</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>SegmentsUpperBoundAddrBit27125</name>
+							<description>Segments Upper bound address bit[27:12]</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SegmentsLowerBoundAddrBit27125</name>
+							<description>Segments Lower bound address bit[27:12]</description>
+							<bitRange>[15:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC0C8</name>
+					<description>Write Address Filter Register \#7</description>
+					<addressOffset>0xc8</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>SegmentsUpperBoundAddrBit27126</name>
+							<description>Segments Upper bound address bit[27:12]</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SegmentsLowerBoundAddrBit27126</name>
+							<description>Segments Lower bound address bit[27:12]</description>
+							<bitRange>[15:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC0CC</name>
+					<description>Write Address Filter Register \#8</description>
+					<addressOffset>0xcc</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>SegmentsUpperBoundAddrBit27127</name>
+							<description>Segments Upper bound address bit[27:12]</description>
+							<bitRange>[31:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SegmentsLowerBoundAddrBit27127</name>
+							<description>Segments Lower bound address bit[27:12]</description>
+							<bitRange>[15:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC100</name>
+					<description>Fully Qualified Command</description>
+					<addressOffset>0x100</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x80000003</resetValue>
+					<resetMask>0x8000FFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>EnblEntry</name>
+							<description>Enable Entry</description>
+							<bitRange>[31:31]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[30:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd9</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC104</name>
+					<description>Fully Qualified Command</description>
+					<addressOffset>0x104</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x8000000B</resetValue>
+					<resetMask>0x8000FFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>EnblEntry1</name>
+							<description>Enable Entry</description>
+							<bitRange>[31:31]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved1</name>
+							<description>Reserved</description>
+							<bitRange>[30:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd1</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd10</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC108</name>
+					<description>Fully Qualified Command</description>
+					<addressOffset>0x108</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x8000009F</resetValue>
+					<resetMask>0x8000FFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>EnblEntry2</name>
+							<description>Enable Entry</description>
+							<bitRange>[31:31]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved2</name>
+							<description>Reserved</description>
+							<bitRange>[30:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd2</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd11</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC10C</name>
+					<description>Fully Qualified Command</description>
+					<addressOffset>0x10c</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x80000005</resetValue>
+					<resetMask>0x8000FFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>EnblEntry3</name>
+							<description>Enable Entry</description>
+							<bitRange>[31:31]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved3</name>
+							<description>Reserved</description>
+							<bitRange>[30:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd3</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd12</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC110</name>
+					<description>Fully Qualified Command</description>
+					<addressOffset>0x110</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x80000001</resetValue>
+					<resetMask>0x8000FFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>EnblEntry4</name>
+							<description>Enable Entry</description>
+							<bitRange>[31:31]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved4</name>
+							<description>Reserved</description>
+							<bitRange>[30:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd4</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd13</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC114</name>
+					<description>Fully Qualified Command</description>
+					<addressOffset>0x114</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x80000006</resetValue>
+					<resetMask>0x8000FFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>EnblEntry5</name>
+							<description>Enable Entry</description>
+							<bitRange>[31:31]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved5</name>
+							<description>Reserved</description>
+							<bitRange>[30:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd5</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd14</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC118</name>
+					<description>Fully Qualified Command</description>
+					<addressOffset>0x118</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x80000004</resetValue>
+					<resetMask>0x8000FFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>EnblEntry6</name>
+							<description>Enable Entry</description>
+							<bitRange>[31:31]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved6</name>
+							<description>Reserved</description>
+							<bitRange>[30:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd6</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd15</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC11C</name>
+					<description>Fully Qualified Command</description>
+					<addressOffset>0x11c</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0x8000FFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>EnblEntry7</name>
+							<description>Enable Entry</description>
+							<bitRange>[31:31]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved7</name>
+							<description>Reserved</description>
+							<bitRange>[30:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd7</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd16</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<dim>12</dim>
+					<dimIncrement>4</dimIncrement>
+					<name>FMCFQCD[%s]</name>
+					<description>Fully Qualified Command</description>
+					<addressOffset>0x120</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0x8000FFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>EnblEntry8</name>
+							<description>Enable Entry</description>
+							<bitRange>[31:31]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved8</name>
+							<description>Reserved</description>
+							<bitRange>[30:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd8</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>FullyQualifiedCmd17</name>
+							<description>Fully qualified Command</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC150</name>
+					<description>Address Qualified Command</description>
+					<addressOffset>0x150</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x08000002</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Cmd3Setting</name>
+							<description>Command #3 setting</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd2Setting</name>
+							<description>Command #2 setting</description>
+							<bitRange>[29:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd1Setting</name>
+							<description>Command #1 setting</description>
+							<bitRange>[27:26]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>3B4BCmd</name>
+							<description>3B/4B Command</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Command_321_Are_For_3B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 3B mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Command_321_Are_For_4B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 4B mode.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd3</name>
+							<description>Command #3</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd2</name>
+							<description>Command #2</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd1</name>
+							<description>Command #1</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC154</name>
+					<description>Address Qualified Command</description>
+					<addressOffset>0x154</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x080000D8</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Cmd3Setting1</name>
+							<description>Command #3 setting</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd2Setting1</name>
+							<description>Command #2 setting</description>
+							<bitRange>[29:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd1Setting1</name>
+							<description>Command #1 setting</description>
+							<bitRange>[27:26]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved1</name>
+							<description>Reserved</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>3B4BCmd1</name>
+							<description>3B/4B Command</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Command_321_Are_For_3B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 3B mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Command_321_Are_For_4B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 4B mode.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd31</name>
+							<description>Command #3</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd21</name>
+							<description>Command #2</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd11</name>
+							<description>Command #1</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC158</name>
+					<description>Address Qualified Command</description>
+					<addressOffset>0x158</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Cmd3Setting2</name>
+							<description>Command #3 setting</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd2Setting2</name>
+							<description>Command #2 setting</description>
+							<bitRange>[29:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd1Setting2</name>
+							<description>Command #1 setting</description>
+							<bitRange>[27:26]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved2</name>
+							<description>Reserved</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>3B4BCmd2</name>
+							<description>3B/4B Command</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Command_321_Are_For_3B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 3B mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Command_321_Are_For_4B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 4B mode.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd32</name>
+							<description>Command #3</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd22</name>
+							<description>Command #2</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd12</name>
+							<description>Command #1</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC15C</name>
+					<description>Address Qualified Command</description>
+					<addressOffset>0x15c</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Cmd3Setting3</name>
+							<description>Command #3 setting</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd2Setting3</name>
+							<description>Command #2 setting</description>
+							<bitRange>[29:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd1Setting3</name>
+							<description>Command #1 setting</description>
+							<bitRange>[27:26]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved3</name>
+							<description>Reserved</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>3B4BCmd3</name>
+							<description>3B/4B Command</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Command_321_Are_For_3B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 3B mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Command_321_Are_For_4B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 4B mode.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd33</name>
+							<description>Command #3</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd23</name>
+							<description>Command #2</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd13</name>
+							<description>Command #1</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC160</name>
+					<description>Address Qualified Command</description>
+					<addressOffset>0x160</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Cmd3Setting4</name>
+							<description>Command #3 setting</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd2Setting4</name>
+							<description>Command #2 setting</description>
+							<bitRange>[29:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd1Setting4</name>
+							<description>Command #1 setting</description>
+							<bitRange>[27:26]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved4</name>
+							<description>Reserved</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>3B4BCmd4</name>
+							<description>3B/4B Command</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Command_321_Are_For_3B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 3B mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Command_321_Are_For_4B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 4B mode.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd34</name>
+							<description>Command #3</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd24</name>
+							<description>Command #2</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd14</name>
+							<description>Command #1</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC164</name>
+					<description>Address Qualified Command</description>
+					<addressOffset>0x164</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Cmd3Setting5</name>
+							<description>Command #3 setting</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd2Setting5</name>
+							<description>Command #2 setting</description>
+							<bitRange>[29:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd1Setting5</name>
+							<description>Command #1 setting</description>
+							<bitRange>[27:26]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved5</name>
+							<description>Reserved</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>3B4BCmd5</name>
+							<description>3B/4B Command</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Command_321_Are_For_3B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 3B mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Command_321_Are_For_4B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 4B mode.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd35</name>
+							<description>Command #3</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd25</name>
+							<description>Command #2</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd15</name>
+							<description>Command #1</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC168</name>
+					<description>Address Qualified Command</description>
+					<addressOffset>0x168</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Cmd3Setting6</name>
+							<description>Command #3 setting</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd2Setting6</name>
+							<description>Command #2 setting</description>
+							<bitRange>[29:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd1Setting6</name>
+							<description>Command #1 setting</description>
+							<bitRange>[27:26]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved6</name>
+							<description>Reserved</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>3B4BCmd6</name>
+							<description>3B/4B Command</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Command_321_Are_For_3B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 3B mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Command_321_Are_For_4B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 4B mode.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd36</name>
+							<description>Command #3</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd26</name>
+							<description>Command #2</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd16</name>
+							<description>Command #1</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC16C</name>
+					<description>Address Qualified Command</description>
+					<addressOffset>0x16c</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Cmd3Setting7</name>
+							<description>Command #3 setting</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd2Setting7</name>
+							<description>Command #2 setting</description>
+							<bitRange>[29:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd1Setting7</name>
+							<description>Command #1 setting</description>
+							<bitRange>[27:26]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved7</name>
+							<description>Reserved</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>3B4BCmd7</name>
+							<description>3B/4B Command</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Command_321_Are_For_3B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 3B mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Command_321_Are_For_4B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 4B mode.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd37</name>
+							<description>Command #3</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd27</name>
+							<description>Command #2</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd17</name>
+							<description>Command #1</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC170</name>
+					<description>Address Qualified Command</description>
+					<addressOffset>0x170</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Cmd3Setting8</name>
+							<description>Command #3 setting</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd2Setting8</name>
+							<description>Command #2 setting</description>
+							<bitRange>[29:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd1Setting8</name>
+							<description>Command #1 setting</description>
+							<bitRange>[27:26]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved8</name>
+							<description>Reserved</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>3B4BCmd8</name>
+							<description>3B/4B Command</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Command_321_Are_For_3B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 3B mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Command_321_Are_For_4B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 4B mode.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd38</name>
+							<description>Command #3</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd28</name>
+							<description>Command #2</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd18</name>
+							<description>Command #1</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC174</name>
+					<description>Address Qualified Command</description>
+					<addressOffset>0x174</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Cmd3Setting9</name>
+							<description>Command #3 setting</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd2Setting9</name>
+							<description>Command #2 setting</description>
+							<bitRange>[29:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd1Setting9</name>
+							<description>Command #1 setting</description>
+							<bitRange>[27:26]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved9</name>
+							<description>Reserved</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>3B4BCmd9</name>
+							<description>3B/4B Command</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Command_321_Are_For_3B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 3B mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Command_321_Are_For_4B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 4B mode.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd39</name>
+							<description>Command #3</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd29</name>
+							<description>Command #2</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd19</name>
+							<description>Command #1</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC178</name>
+					<description>Address Qualified Command</description>
+					<addressOffset>0x178</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Cmd3Setting10</name>
+							<description>Command #3 setting</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd2Setting10</name>
+							<description>Command #2 setting</description>
+							<bitRange>[29:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd1Setting10</name>
+							<description>Command #1 setting</description>
+							<bitRange>[27:26]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved10</name>
+							<description>Reserved</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>3B4BCmd10</name>
+							<description>3B/4B Command</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Command_321_Are_For_3B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 3B mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Command_321_Are_For_4B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 4B mode.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd310</name>
+							<description>Command #3</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd210</name>
+							<description>Command #2</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd110</name>
+							<description>Command #1</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>FMC17C</name>
+					<description>Address Qualified Command</description>
+					<addressOffset>0x17c</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>Cmd3Setting11</name>
+							<description>Command #3 setting</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd2Setting11</name>
+							<description>Command #2 setting</description>
+							<bitRange>[29:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd1Setting11</name>
+							<description>Command #1 setting</description>
+							<bitRange>[27:26]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable</name>
+									<description>Disable.</description>
+									<value>0b00</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read</name>
+									<description>For Read.</description>
+									<value>0b01</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Write</name>
+									<description>For Write.</description>
+									<value>0b10</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>For_Read_And_Write</name>
+									<description>For Read and Write.</description>
+									<value>0b11</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved11</name>
+							<description>Reserved</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>3B4BCmd11</name>
+							<description>3B/4B Command</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Command_321_Are_For_3B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 3B mode.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Command_321_Are_For_4B_Mode</name>
+									<description>Command \#3/\#2/\#1 are for 4B mode.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Cmd311</name>
+							<description>Command #3</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd211</name>
+							<description>Command #2</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Cmd111</name>
+							<description>Command #1</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<dim>64</dim>
+					<dimIncrement>4</dimIncrement>
+					<name>FMCBUF[%s]</name>
+					<description>DMA Buffer Data Register</description>
+					<addressOffset>0x200</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>DMABufferReadwrPort</name>
+							<description>DMA Buffer read/write port</description>
+							<bitRange>[31:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+			</registers>
 		</peripheral>
 	</peripherals>
 </device>

@@ -16,6 +16,7 @@ extern "C" {
     fn gpio();
     fn scu();
     fn wdt();
+    fn fmc();
     fn sgpiom();
     fn uartdma();
     fn spi();
@@ -93,7 +94,7 @@ pub static __INTERRUPTS: [Vector; 128] = [
     Vector { _reserved: 0 },
     Vector { _reserved: 0 },
     Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
+    Vector { _handler: fmc },
     Vector { _reserved: 0 },
     Vector { _reserved: 0 },
     Vector { _reserved: 0 },
@@ -199,6 +200,8 @@ pub enum Interrupt {
     scu = 12,
     #[doc = "24 - wdt"]
     wdt = 24,
+    #[doc = "39 - fmc"]
+    fmc = 39,
     #[doc = "51 - sgpiom"]
     sgpiom = 51,
     #[doc = "56 - uartdma"]
@@ -636,6 +639,15 @@ impl core::fmt::Debug for Wdt3 {
 }
 #[doc = "wdt interface"]
 pub use self::wdt as wdt3;
+#[doc = "fmc"]
+pub type Fmc = crate::Periph<fmc::RegisterBlock, 0x7e62_0000>;
+impl core::fmt::Debug for Fmc {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Fmc").finish()
+    }
+}
+#[doc = "fmc"]
+pub mod fmc;
 #[no_mangle]
 static mut DEVICE_PERIPHERALS: bool = false;
 #[doc = r" All the peripherals."]
@@ -725,6 +737,8 @@ pub struct Peripherals {
     pub wdt2: Wdt2,
     #[doc = "wdt3"]
     pub wdt3: Wdt3,
+    #[doc = "fmc"]
+    pub fmc: Fmc,
 }
 impl Peripherals {
     #[doc = r" Returns all the peripherals *once*."]
@@ -789,6 +803,7 @@ impl Peripherals {
             wdt1: Wdt1::steal(),
             wdt2: Wdt2::steal(),
             wdt3: Wdt3::steal(),
+            fmc: Fmc::steal(),
         }
     }
 }
