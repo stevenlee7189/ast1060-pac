@@ -278,7 +278,7 @@ impl core::fmt::Debug for Spi1 {
     }
 }
 #[doc = "spi interface"]
-pub use self::spi as spi1;
+pub use self::spi as other_spi1;
 #[doc = "i3cglobal"]
 pub type I3cglobal = crate::Periph<i3cglobal::RegisterBlock, 0x7e7a_0000>;
 impl core::fmt::Debug for I3cglobal {
@@ -305,7 +305,7 @@ impl core::fmt::Debug for I3c1 {
     }
 }
 #[doc = "i3c interface"]
-pub use self::i3c as i3c1;
+pub use self::i3c as other_i3c1;
 #[doc = "i3c interface"]
 pub type I3c2 = crate::Periph<i3c::RegisterBlock, 0x7e7a_4000>;
 impl core::fmt::Debug for I3c2 {
@@ -314,7 +314,7 @@ impl core::fmt::Debug for I3c2 {
     }
 }
 #[doc = "i3c interface"]
-pub use self::i3c as i3c2;
+pub use self::i3c as other_i3c2;
 #[doc = "i3c interface"]
 pub type I3c3 = crate::Periph<i3c::RegisterBlock, 0x7e7a_5000>;
 impl core::fmt::Debug for I3c3 {
@@ -323,7 +323,7 @@ impl core::fmt::Debug for I3c3 {
     }
 }
 #[doc = "i3c interface"]
-pub use self::i3c as i3c3;
+pub use self::i3c as other_i3c3;
 #[doc = "gpio"]
 pub type Gpio = crate::Periph<gpio::RegisterBlock, 0x7e78_0000>;
 impl core::fmt::Debug for Gpio {
@@ -386,7 +386,7 @@ impl core::fmt::Debug for I2c1 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c1;
+pub use self::i2c as other_i2c1;
 #[doc = "i2c interface"]
 pub type I2c2 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0180>;
 impl core::fmt::Debug for I2c2 {
@@ -395,7 +395,7 @@ impl core::fmt::Debug for I2c2 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c2;
+pub use self::i2c as other_i2c2;
 #[doc = "i2c interface"]
 pub type I2c3 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0200>;
 impl core::fmt::Debug for I2c3 {
@@ -404,7 +404,7 @@ impl core::fmt::Debug for I2c3 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c3;
+pub use self::i2c as other_i2c3;
 #[doc = "i2c interface"]
 pub type I2c4 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0280>;
 impl core::fmt::Debug for I2c4 {
@@ -413,7 +413,7 @@ impl core::fmt::Debug for I2c4 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c4;
+pub use self::i2c as other_i2c4;
 #[doc = "i2c interface"]
 pub type I2c5 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0300>;
 impl core::fmt::Debug for I2c5 {
@@ -422,7 +422,7 @@ impl core::fmt::Debug for I2c5 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c5;
+pub use self::i2c as other_i2c5;
 #[doc = "i2c interface"]
 pub type I2c6 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0380>;
 impl core::fmt::Debug for I2c6 {
@@ -431,7 +431,7 @@ impl core::fmt::Debug for I2c6 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c6;
+pub use self::i2c as other_i2c6;
 #[doc = "i2c interface"]
 pub type I2c7 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0400>;
 impl core::fmt::Debug for I2c7 {
@@ -440,7 +440,7 @@ impl core::fmt::Debug for I2c7 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c7;
+pub use self::i2c as other_i2c7;
 #[doc = "i2c interface"]
 pub type I2c8 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0480>;
 impl core::fmt::Debug for I2c8 {
@@ -449,7 +449,7 @@ impl core::fmt::Debug for I2c8 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c8;
+pub use self::i2c as other_i2c8;
 #[doc = "i2c interface"]
 pub type I2c9 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0500>;
 impl core::fmt::Debug for I2c9 {
@@ -458,7 +458,7 @@ impl core::fmt::Debug for I2c9 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c9;
+pub use self::i2c as other_i2c9;
 #[doc = "i2c interface"]
 pub type I2c10 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0580>;
 impl core::fmt::Debug for I2c10 {
@@ -467,7 +467,7 @@ impl core::fmt::Debug for I2c10 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c10;
+pub use self::i2c as other_i2c10;
 #[doc = "i2c interface"]
 pub type I2c11 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0600>;
 impl core::fmt::Debug for I2c11 {
@@ -476,7 +476,7 @@ impl core::fmt::Debug for I2c11 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c11;
+pub use self::i2c as other_i2c11;
 #[doc = "i2c interface"]
 pub type I2c12 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0680>;
 impl core::fmt::Debug for I2c12 {
@@ -485,7 +485,7 @@ impl core::fmt::Debug for I2c12 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c12;
+pub use self::i2c as other_i2c12;
 #[doc = "i2c interface"]
 pub type I2c13 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0700>;
 impl core::fmt::Debug for I2c13 {
@@ -494,7 +494,7 @@ impl core::fmt::Debug for I2c13 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as i2c13;
+pub use self::i2c as other_i2c13;
 #[doc = "i2cglobal"]
 pub type I2cglobal = crate::Periph<i2cglobal::RegisterBlock, 0x7e7b_0000>;
 impl core::fmt::Debug for I2cglobal {
