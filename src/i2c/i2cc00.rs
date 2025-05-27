@@ -2,10 +2,66 @@
 pub type R = crate::R<I2cc00Spec>;
 #[doc = "Register `I2CC00` writer"]
 pub type W = crate::W<I2cc00Spec>;
-#[doc = "Field `SameAsI2CD00` reader - Same as hlinkI2CD00"]
-pub type SameAsI2cd00R = crate::FieldReader<u32>;
-#[doc = "Field `SameAsI2CD00` writer - Same as hlinkI2CD00"]
-pub type SameAsI2cd00W<'a, REG> = crate::FieldWriter<'a, REG, 18, u32>;
+#[doc = "Field `EnblMasterFn` reader - Enable master function"]
+pub type EnblMasterFnR = crate::BitReader;
+#[doc = "Field `EnblMasterFn` writer - Enable master function"]
+pub type EnblMasterFnW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblSlaveFn` reader - Enable slave function"]
+pub type EnblSlaveFnR = crate::BitReader;
+#[doc = "Field `EnblSlaveFn` writer - Enable slave function"]
+pub type EnblSlaveFnW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `DefeatureEnblI2CSMBusToRespondTheGenCallAddr00000000` reader - defeatureEnable I2C/SMBus to respond the General Call Address (0000_0000)"]
+pub type DefeatureEnblI2csmbusToRespondTheGenCallAddr00000000R = crate::BitReader;
+#[doc = "Field `DefeatureEnblI2CSMBusToRespondTheGenCallAddr00000000` writer - defeatureEnable I2C/SMBus to respond the General Call Address (0000_0000)"]
+pub type DefeatureEnblI2csmbusToRespondTheGenCallAddr00000000W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `DefeatureEnblI2CSMBusToRespondTheARPHostAddr0001000` reader - defeatureEnable I2C/SMBus to respond the ARP Host Address (0001_000)"]
+pub type DefeatureEnblI2csmbusToRespondTheArphostAddr0001000R = crate::BitReader;
+#[doc = "Field `DefeatureEnblI2CSMBusToRespondTheARPHostAddr0001000` writer - defeatureEnable I2C/SMBus to respond the ARP Host Address (0001_000)"]
+pub type DefeatureEnblI2csmbusToRespondTheArphostAddr0001000W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `DefeatureEnblI2CSMBusToRespondTheAlertAddr0001100` reader - defeatureEnable I2C/SMBus to respond the Alert Address (0001_100)"]
+pub type DefeatureEnblI2csmbusToRespondTheAlertAddr0001100R = crate::BitReader;
+#[doc = "Field `DefeatureEnblI2CSMBusToRespondTheAlertAddr0001100` writer - defeatureEnable I2C/SMBus to respond the Alert Address (0001_100)"]
+pub type DefeatureEnblI2csmbusToRespondTheAlertAddr0001100W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `DefeatureEnblI2CSMBusToRespondTheDefaultAddr1100001` reader - defeatureEnable I2C/SMBus to respond the Default Address (1100_001)"]
+pub type DefeatureEnblI2csmbusToRespondTheDefaultAddr1100001R = crate::BitReader;
+#[doc = "Field `DefeatureEnblI2CSMBusToRespondTheDefaultAddr1100001` writer - defeatureEnable I2C/SMBus to respond the Default Address (1100_001)"]
+pub type DefeatureEnblI2csmbusToRespondTheDefaultAddr1100001W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblHighSpeedMasterMode` reader - Enable High Speed master mode"]
+pub type EnblHighSpeedMasterModeR = crate::BitReader;
+#[doc = "Field `EnblHighSpeedMasterMode` writer - Enable High Speed master mode"]
+pub type EnblHighSpeedMasterModeW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblSCLSigToDirDriveHighFor1TMasterOnly` reader - Enable SCL signal to direct drive high for 1T (Master Only)"]
+pub type EnblSclsigToDirDriveHighFor1tmasterOnlyR = crate::BitReader;
+#[doc = "Field `EnblSCLSigToDirDriveHighFor1TMasterOnly` writer - Enable SCL signal to direct drive high for 1T (Master Only)"]
+pub type EnblSclsigToDirDriveHighFor1tmasterOnlyW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblSDASigToDirDriveHighFor1T` reader - Enable SDA signal to direct drive high for 1T"]
+pub type EnblSdasigToDirDriveHighFor1tR = crate::BitReader;
+#[doc = "Field `EnblSDASigToDirDriveHighFor1T` writer - Enable SDA signal to direct drive high for 1T"]
+pub type EnblSdasigToDirDriveHighFor1tW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblSlaveAddrRangeMode` reader - Enable slave address range mode"]
+pub type EnblSlaveAddrRangeModeR = crate::BitReader;
+#[doc = "Field `EnblSlaveAddrRangeMode` writer - Enable slave address range mode"]
+pub type EnblSlaveAddrRangeModeW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `Reserved02` reader - Reserved (0)"]
+pub type Reserved02R = crate::FieldReader;
+#[doc = "Field `EnblSCLDirDriveModeForMasterFnOnly` reader - Enable SCL direct drive mode (for master function only)"]
+pub type EnblScldirDriveModeForMasterFnOnlyR = crate::BitReader;
+#[doc = "Field `EnblSCLDirDriveModeForMasterFnOnly` writer - Enable SCL direct drive mode (for master function only)"]
+pub type EnblScldirDriveModeForMasterFnOnlyW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `DisMultimasterCapabilityForMasterFnOnly` reader - Disable multi-master capability (for master function only)"]
+pub type DisMultimasterCapabilityForMasterFnOnlyR = crate::BitReader;
+#[doc = "Field `DisMultimasterCapabilityForMasterFnOnly` writer - Disable multi-master capability (for master function only)"]
+pub type DisMultimasterCapabilityForMasterFnOnlyW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblMasterAutoSDALockRecoveryCapabilityForSingleMasterCaseOnly` reader - Enable master auto SDA lock recovery capability (for single master case only)"]
+pub type EnblMasterAutoSdalockRecoveryCapabilityForSingleMasterCaseOnlyR = crate::BitReader;
+#[doc = "Field `EnblMasterAutoSDALockRecoveryCapabilityForSingleMasterCaseOnly` writer - Enable master auto SDA lock recovery capability (for single master case only)"]
+pub type EnblMasterAutoSdalockRecoveryCapabilityForSingleMasterCaseOnlyW<'a, REG> =
+    crate::BitWriter<'a, REG>;
+#[doc = "Field `EnblBusAutoreleaseWhenSCLLowSDALowOrSlaveModeInactiveTimeout` reader - Enable bus auto-release when SCL low, SDA low, or slave mode inactive timeout"]
+pub type EnblBusAutoreleaseWhenScllowSdalowOrSlaveModeInactiveTimeoutR = crate::BitReader;
+#[doc = "Field `EnblBusAutoreleaseWhenSCLLowSDALowOrSlaveModeInactiveTimeout` writer - Enable bus auto-release when SCL low, SDA low, or slave mode inactive timeout"]
+pub type EnblBusAutoreleaseWhenScllowSdalowOrSlaveModeInactiveTimeoutW<'a, REG> =
+    crate::BitWriter<'a, REG>;
 #[doc = "Field `MasterPktOpRetryCount` reader - Master packet operation retry count"]
 pub type MasterPktOpRetryCountR = crate::FieldReader;
 #[doc = "Field `MasterPktOpRetryCount` writer - Master packet operation retry count"]
@@ -27,10 +83,100 @@ pub type Reserved01R = crate::FieldReader<u16>;
 #[doc = "Field `Reserved0` reader - Reserved (0)"]
 pub type Reserved0R = crate::FieldReader<u16>;
 impl R {
-    #[doc = "Bits 0:17 - Same as hlinkI2CD00"]
+    #[doc = "Bit 0 - Enable master function"]
     #[inline(always)]
-    pub fn same_as_i2cd00(&self) -> SameAsI2cd00R {
-        SameAsI2cd00R::new(self.bits & 0x0003_ffff)
+    pub fn enbl_master_fn(&self) -> EnblMasterFnR {
+        EnblMasterFnR::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bit 1 - Enable slave function"]
+    #[inline(always)]
+    pub fn enbl_slave_fn(&self) -> EnblSlaveFnR {
+        EnblSlaveFnR::new(((self.bits >> 1) & 1) != 0)
+    }
+    #[doc = "Bit 2 - defeatureEnable I2C/SMBus to respond the General Call Address (0000_0000)"]
+    #[inline(always)]
+    pub fn defeature_enbl_i2csmbus_to_respond_the_gen_call_addr00000000(
+        &self,
+    ) -> DefeatureEnblI2csmbusToRespondTheGenCallAddr00000000R {
+        DefeatureEnblI2csmbusToRespondTheGenCallAddr00000000R::new(((self.bits >> 2) & 1) != 0)
+    }
+    #[doc = "Bit 3 - defeatureEnable I2C/SMBus to respond the ARP Host Address (0001_000)"]
+    #[inline(always)]
+    pub fn defeature_enbl_i2csmbus_to_respond_the_arphost_addr0001000(
+        &self,
+    ) -> DefeatureEnblI2csmbusToRespondTheArphostAddr0001000R {
+        DefeatureEnblI2csmbusToRespondTheArphostAddr0001000R::new(((self.bits >> 3) & 1) != 0)
+    }
+    #[doc = "Bit 4 - defeatureEnable I2C/SMBus to respond the Alert Address (0001_100)"]
+    #[inline(always)]
+    pub fn defeature_enbl_i2csmbus_to_respond_the_alert_addr0001100(
+        &self,
+    ) -> DefeatureEnblI2csmbusToRespondTheAlertAddr0001100R {
+        DefeatureEnblI2csmbusToRespondTheAlertAddr0001100R::new(((self.bits >> 4) & 1) != 0)
+    }
+    #[doc = "Bit 5 - defeatureEnable I2C/SMBus to respond the Default Address (1100_001)"]
+    #[inline(always)]
+    pub fn defeature_enbl_i2csmbus_to_respond_the_default_addr1100001(
+        &self,
+    ) -> DefeatureEnblI2csmbusToRespondTheDefaultAddr1100001R {
+        DefeatureEnblI2csmbusToRespondTheDefaultAddr1100001R::new(((self.bits >> 5) & 1) != 0)
+    }
+    #[doc = "Bit 6 - Enable High Speed master mode"]
+    #[inline(always)]
+    pub fn enbl_high_speed_master_mode(&self) -> EnblHighSpeedMasterModeR {
+        EnblHighSpeedMasterModeR::new(((self.bits >> 6) & 1) != 0)
+    }
+    #[doc = "Bit 7 - Enable SCL signal to direct drive high for 1T (Master Only)"]
+    #[inline(always)]
+    pub fn enbl_sclsig_to_dir_drive_high_for1tmaster_only(
+        &self,
+    ) -> EnblSclsigToDirDriveHighFor1tmasterOnlyR {
+        EnblSclsigToDirDriveHighFor1tmasterOnlyR::new(((self.bits >> 7) & 1) != 0)
+    }
+    #[doc = "Bit 8 - Enable SDA signal to direct drive high for 1T"]
+    #[inline(always)]
+    pub fn enbl_sdasig_to_dir_drive_high_for1t(&self) -> EnblSdasigToDirDriveHighFor1tR {
+        EnblSdasigToDirDriveHighFor1tR::new(((self.bits >> 8) & 1) != 0)
+    }
+    #[doc = "Bit 9 - Enable slave address range mode"]
+    #[inline(always)]
+    pub fn enbl_slave_addr_range_mode(&self) -> EnblSlaveAddrRangeModeR {
+        EnblSlaveAddrRangeModeR::new(((self.bits >> 9) & 1) != 0)
+    }
+    #[doc = "Bits 10:13 - Reserved (0)"]
+    #[inline(always)]
+    pub fn reserved02(&self) -> Reserved02R {
+        Reserved02R::new(((self.bits >> 10) & 0x0f) as u8)
+    }
+    #[doc = "Bit 14 - Enable SCL direct drive mode (for master function only)"]
+    #[inline(always)]
+    pub fn enbl_scldir_drive_mode_for_master_fn_only(&self) -> EnblScldirDriveModeForMasterFnOnlyR {
+        EnblScldirDriveModeForMasterFnOnlyR::new(((self.bits >> 14) & 1) != 0)
+    }
+    #[doc = "Bit 15 - Disable multi-master capability (for master function only)"]
+    #[inline(always)]
+    pub fn dis_multimaster_capability_for_master_fn_only(
+        &self,
+    ) -> DisMultimasterCapabilityForMasterFnOnlyR {
+        DisMultimasterCapabilityForMasterFnOnlyR::new(((self.bits >> 15) & 1) != 0)
+    }
+    #[doc = "Bit 16 - Enable master auto SDA lock recovery capability (for single master case only)"]
+    #[inline(always)]
+    pub fn enbl_master_auto_sdalock_recovery_capability_for_single_master_case_only(
+        &self,
+    ) -> EnblMasterAutoSdalockRecoveryCapabilityForSingleMasterCaseOnlyR {
+        EnblMasterAutoSdalockRecoveryCapabilityForSingleMasterCaseOnlyR::new(
+            ((self.bits >> 16) & 1) != 0,
+        )
+    }
+    #[doc = "Bit 17 - Enable bus auto-release when SCL low, SDA low, or slave mode inactive timeout"]
+    #[inline(always)]
+    pub fn enbl_bus_autorelease_when_scllow_sdalow_or_slave_mode_inactive_timeout(
+        &self,
+    ) -> EnblBusAutoreleaseWhenScllowSdalowOrSlaveModeInactiveTimeoutR {
+        EnblBusAutoreleaseWhenScllowSdalowOrSlaveModeInactiveTimeoutR::new(
+            ((self.bits >> 17) & 1) != 0,
+        )
     }
     #[doc = "Bits 18:19 - Master packet operation retry count"]
     #[inline(always)]
@@ -68,10 +214,95 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bits 0:17 - Same as hlinkI2CD00"]
+    #[doc = "Bit 0 - Enable master function"]
     #[inline(always)]
-    pub fn same_as_i2cd00(&mut self) -> SameAsI2cd00W<I2cc00Spec> {
-        SameAsI2cd00W::new(self, 0)
+    pub fn enbl_master_fn(&mut self) -> EnblMasterFnW<I2cc00Spec> {
+        EnblMasterFnW::new(self, 0)
+    }
+    #[doc = "Bit 1 - Enable slave function"]
+    #[inline(always)]
+    pub fn enbl_slave_fn(&mut self) -> EnblSlaveFnW<I2cc00Spec> {
+        EnblSlaveFnW::new(self, 1)
+    }
+    #[doc = "Bit 2 - defeatureEnable I2C/SMBus to respond the General Call Address (0000_0000)"]
+    #[inline(always)]
+    pub fn defeature_enbl_i2csmbus_to_respond_the_gen_call_addr00000000(
+        &mut self,
+    ) -> DefeatureEnblI2csmbusToRespondTheGenCallAddr00000000W<I2cc00Spec> {
+        DefeatureEnblI2csmbusToRespondTheGenCallAddr00000000W::new(self, 2)
+    }
+    #[doc = "Bit 3 - defeatureEnable I2C/SMBus to respond the ARP Host Address (0001_000)"]
+    #[inline(always)]
+    pub fn defeature_enbl_i2csmbus_to_respond_the_arphost_addr0001000(
+        &mut self,
+    ) -> DefeatureEnblI2csmbusToRespondTheArphostAddr0001000W<I2cc00Spec> {
+        DefeatureEnblI2csmbusToRespondTheArphostAddr0001000W::new(self, 3)
+    }
+    #[doc = "Bit 4 - defeatureEnable I2C/SMBus to respond the Alert Address (0001_100)"]
+    #[inline(always)]
+    pub fn defeature_enbl_i2csmbus_to_respond_the_alert_addr0001100(
+        &mut self,
+    ) -> DefeatureEnblI2csmbusToRespondTheAlertAddr0001100W<I2cc00Spec> {
+        DefeatureEnblI2csmbusToRespondTheAlertAddr0001100W::new(self, 4)
+    }
+    #[doc = "Bit 5 - defeatureEnable I2C/SMBus to respond the Default Address (1100_001)"]
+    #[inline(always)]
+    pub fn defeature_enbl_i2csmbus_to_respond_the_default_addr1100001(
+        &mut self,
+    ) -> DefeatureEnblI2csmbusToRespondTheDefaultAddr1100001W<I2cc00Spec> {
+        DefeatureEnblI2csmbusToRespondTheDefaultAddr1100001W::new(self, 5)
+    }
+    #[doc = "Bit 6 - Enable High Speed master mode"]
+    #[inline(always)]
+    pub fn enbl_high_speed_master_mode(&mut self) -> EnblHighSpeedMasterModeW<I2cc00Spec> {
+        EnblHighSpeedMasterModeW::new(self, 6)
+    }
+    #[doc = "Bit 7 - Enable SCL signal to direct drive high for 1T (Master Only)"]
+    #[inline(always)]
+    pub fn enbl_sclsig_to_dir_drive_high_for1tmaster_only(
+        &mut self,
+    ) -> EnblSclsigToDirDriveHighFor1tmasterOnlyW<I2cc00Spec> {
+        EnblSclsigToDirDriveHighFor1tmasterOnlyW::new(self, 7)
+    }
+    #[doc = "Bit 8 - Enable SDA signal to direct drive high for 1T"]
+    #[inline(always)]
+    pub fn enbl_sdasig_to_dir_drive_high_for1t(
+        &mut self,
+    ) -> EnblSdasigToDirDriveHighFor1tW<I2cc00Spec> {
+        EnblSdasigToDirDriveHighFor1tW::new(self, 8)
+    }
+    #[doc = "Bit 9 - Enable slave address range mode"]
+    #[inline(always)]
+    pub fn enbl_slave_addr_range_mode(&mut self) -> EnblSlaveAddrRangeModeW<I2cc00Spec> {
+        EnblSlaveAddrRangeModeW::new(self, 9)
+    }
+    #[doc = "Bit 14 - Enable SCL direct drive mode (for master function only)"]
+    #[inline(always)]
+    pub fn enbl_scldir_drive_mode_for_master_fn_only(
+        &mut self,
+    ) -> EnblScldirDriveModeForMasterFnOnlyW<I2cc00Spec> {
+        EnblScldirDriveModeForMasterFnOnlyW::new(self, 14)
+    }
+    #[doc = "Bit 15 - Disable multi-master capability (for master function only)"]
+    #[inline(always)]
+    pub fn dis_multimaster_capability_for_master_fn_only(
+        &mut self,
+    ) -> DisMultimasterCapabilityForMasterFnOnlyW<I2cc00Spec> {
+        DisMultimasterCapabilityForMasterFnOnlyW::new(self, 15)
+    }
+    #[doc = "Bit 16 - Enable master auto SDA lock recovery capability (for single master case only)"]
+    #[inline(always)]
+    pub fn enbl_master_auto_sdalock_recovery_capability_for_single_master_case_only(
+        &mut self,
+    ) -> EnblMasterAutoSdalockRecoveryCapabilityForSingleMasterCaseOnlyW<I2cc00Spec> {
+        EnblMasterAutoSdalockRecoveryCapabilityForSingleMasterCaseOnlyW::new(self, 16)
+    }
+    #[doc = "Bit 17 - Enable bus auto-release when SCL low, SDA low, or slave mode inactive timeout"]
+    #[inline(always)]
+    pub fn enbl_bus_autorelease_when_scllow_sdalow_or_slave_mode_inactive_timeout(
+        &mut self,
+    ) -> EnblBusAutoreleaseWhenScllowSdalowOrSlaveModeInactiveTimeoutW<I2cc00Spec> {
+        EnblBusAutoreleaseWhenScllowSdalowOrSlaveModeInactiveTimeoutW::new(self, 17)
     }
     #[doc = "Bits 18:19 - Master packet operation retry count"]
     #[inline(always)]

@@ -2,22 +2,85 @@
 pub type R = crate::R<I2cc0cSpec>;
 #[doc = "Register `I2CC0C` writer"]
 pub type W = crate::W<I2cc0cSpec>;
-#[doc = "Field `SameAsI2CD1C` reader - Same as hlinkI2CD1C"]
-pub type SameAsI2cd1cR = crate::FieldReader<u32>;
-#[doc = "Field `SameAsI2CD1C` writer - Same as hlinkI2CD1C"]
-pub type SameAsI2cd1cW<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+#[doc = "Field `BufferOrganization` reader - Buffer Organization"]
+pub type BufferOrganizationR = crate::BitReader;
+#[doc = "Field `BufferOrganization` writer - Buffer Organization"]
+pub type BufferOrganizationW<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `Reserved3` reader - Reserved"]
+pub type Reserved3R = crate::FieldReader;
+#[doc = "Field `TxDataByteCount` reader - Transmit Data Byte Count"]
+pub type TxDataByteCountR = crate::FieldReader;
+#[doc = "Field `TxDataByteCount` writer - Transmit Data Byte Count"]
+pub type TxDataByteCountW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `Reserved2` reader - Reserved"]
+pub type Reserved2R = crate::FieldReader;
+#[doc = "Field `RxPoolBufferSize` reader - Receive Pool Buffer Size"]
+pub type RxPoolBufferSizeR = crate::FieldReader;
+#[doc = "Field `RxPoolBufferSize` writer - Receive Pool Buffer Size"]
+pub type RxPoolBufferSizeW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `Reserved1` reader - Reserved"]
+pub type Reserved1R = crate::FieldReader;
+#[doc = "Field `ActualRxdPoolBufferSize` reader - Actual Received Pool Buffer Size"]
+pub type ActualRxdPoolBufferSizeR = crate::FieldReader;
+#[doc = "Field `ActualRxdPoolBufferSize` writer - Actual Received Pool Buffer Size"]
+pub type ActualRxdPoolBufferSizeW<'a, REG> = crate::FieldWriter<'a, REG, 6>;
 impl R {
-    #[doc = "Bits 0:31 - Same as hlinkI2CD1C"]
+    #[doc = "Bit 0 - Buffer Organization"]
     #[inline(always)]
-    pub fn same_as_i2cd1c(&self) -> SameAsI2cd1cR {
-        SameAsI2cd1cR::new(self.bits)
+    pub fn buffer_organization(&self) -> BufferOrganizationR {
+        BufferOrganizationR::new((self.bits & 1) != 0)
+    }
+    #[doc = "Bits 1:7 - Reserved"]
+    #[inline(always)]
+    pub fn reserved3(&self) -> Reserved3R {
+        Reserved3R::new(((self.bits >> 1) & 0x7f) as u8)
+    }
+    #[doc = "Bits 8:12 - Transmit Data Byte Count"]
+    #[inline(always)]
+    pub fn tx_data_byte_count(&self) -> TxDataByteCountR {
+        TxDataByteCountR::new(((self.bits >> 8) & 0x1f) as u8)
+    }
+    #[doc = "Bits 13:15 - Reserved"]
+    #[inline(always)]
+    pub fn reserved2(&self) -> Reserved2R {
+        Reserved2R::new(((self.bits >> 13) & 7) as u8)
+    }
+    #[doc = "Bits 16:20 - Receive Pool Buffer Size"]
+    #[inline(always)]
+    pub fn rx_pool_buffer_size(&self) -> RxPoolBufferSizeR {
+        RxPoolBufferSizeR::new(((self.bits >> 16) & 0x1f) as u8)
+    }
+    #[doc = "Bits 21:23 - Reserved"]
+    #[inline(always)]
+    pub fn reserved1(&self) -> Reserved1R {
+        Reserved1R::new(((self.bits >> 21) & 7) as u8)
+    }
+    #[doc = "Bits 24:29 - Actual Received Pool Buffer Size"]
+    #[inline(always)]
+    pub fn actual_rxd_pool_buffer_size(&self) -> ActualRxdPoolBufferSizeR {
+        ActualRxdPoolBufferSizeR::new(((self.bits >> 24) & 0x3f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - Same as hlinkI2CD1C"]
+    #[doc = "Bit 0 - Buffer Organization"]
     #[inline(always)]
-    pub fn same_as_i2cd1c(&mut self) -> SameAsI2cd1cW<I2cc0cSpec> {
-        SameAsI2cd1cW::new(self, 0)
+    pub fn buffer_organization(&mut self) -> BufferOrganizationW<I2cc0cSpec> {
+        BufferOrganizationW::new(self, 0)
+    }
+    #[doc = "Bits 8:12 - Transmit Data Byte Count"]
+    #[inline(always)]
+    pub fn tx_data_byte_count(&mut self) -> TxDataByteCountW<I2cc0cSpec> {
+        TxDataByteCountW::new(self, 8)
+    }
+    #[doc = "Bits 16:20 - Receive Pool Buffer Size"]
+    #[inline(always)]
+    pub fn rx_pool_buffer_size(&mut self) -> RxPoolBufferSizeW<I2cc0cSpec> {
+        RxPoolBufferSizeW::new(self, 16)
+    }
+    #[doc = "Bits 24:29 - Actual Received Pool Buffer Size"]
+    #[inline(always)]
+    pub fn actual_rxd_pool_buffer_size(&mut self) -> ActualRxdPoolBufferSizeW<I2cc0cSpec> {
+        ActualRxdPoolBufferSizeW::new(self, 24)
     }
 }
 #[doc = "Master/Slave Pool Buffer Control Register\n\nYou can [`read`](crate::Reg::read) this register and get [`i2cc0c::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`i2cc0c::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]

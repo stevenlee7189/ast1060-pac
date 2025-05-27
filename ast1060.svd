@@ -24200,7 +24200,7 @@ permissions and limitations under the License.
 					<size>32</size>
 					<access>read-write</access>
 					<resetValue>0x0</resetValue>
-					<resetMask>0x003FFFFF</resetMask>
+					<resetMask>0x003FC3FF</resetMask>
 
 					<fields>
 						<field>
@@ -24240,9 +24240,93 @@ permissions and limitations under the License.
 							<access>read-write</access>
 						</field>
 						<field>
-							<name>SameAsI2CD00</name>
-							<description>Same as hlinkI2CD00</description>
-							<bitRange>[17:0]</bitRange>
+							<name>EnblBusAutoreleaseWhenSCLLowSDALowOrSlaveModeInactiveTimeout</name>
+							<description>Enable bus auto-release when SCL low, SDA low, or slave mode inactive timeout</description>
+							<bitRange>[17:17]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblMasterAutoSDALockRecoveryCapabilityForSingleMasterCaseOnly</name>
+							<description>Enable master auto SDA lock recovery capability (for single master case only)</description>
+							<bitRange>[16:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DisMultimasterCapabilityForMasterFnOnly</name>
+							<description>Disable multi-master capability (for master function only)</description>
+							<bitRange>[15:15]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblSCLDirDriveModeForMasterFnOnly</name>
+							<description>Enable SCL direct drive mode (for master function only)</description>
+							<bitRange>[14:14]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved02</name>
+							<description>Reserved (0)</description>
+							<bitRange>[13:10]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>EnblSlaveAddrRangeMode</name>
+							<description>Enable slave address range mode</description>
+							<bitRange>[9:9]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblSDASigToDirDriveHighFor1T</name>
+							<description>Enable SDA signal to direct drive high for 1T</description>
+							<bitRange>[8:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblSCLSigToDirDriveHighFor1TMasterOnly</name>
+							<description>Enable SCL signal to direct drive high for 1T (Master Only)</description>
+							<bitRange>[7:7]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblHighSpeedMasterMode</name>
+							<description>Enable High Speed master mode</description>
+							<bitRange>[6:6]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DefeatureEnblI2CSMBusToRespondTheDefaultAddr1100001</name>
+							<description>defeatureEnable I2C/SMBus to respond the Default Address (1100_001)</description>
+							<bitRange>[5:5]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DefeatureEnblI2CSMBusToRespondTheAlertAddr0001100</name>
+							<description>defeatureEnable I2C/SMBus to respond the Alert Address (0001_100)</description>
+							<bitRange>[4:4]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DefeatureEnblI2CSMBusToRespondTheARPHostAddr0001000</name>
+							<description>defeatureEnable I2C/SMBus to respond the ARP Host Address (0001_000)</description>
+							<bitRange>[3:3]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DefeatureEnblI2CSMBusToRespondTheGenCallAddr00000000</name>
+							<description>defeatureEnable I2C/SMBus to respond the General Call Address (0000_0000)</description>
+							<bitRange>[2:2]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblSlaveFn</name>
+							<description>Enable slave function</description>
+							<bitRange>[1:1]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblMasterFn</name>
+							<description>Enable master function</description>
+							<bitRange>[0:0]</bitRange>
 							<access>read-write</access>
 						</field>
 					</fields>
@@ -24254,7 +24338,7 @@ permissions and limitations under the License.
 					<size>32</size>
 					<access>read-write</access>
 					<resetValue>0x0</resetValue>
-					<resetMask>0x1FFFFFFF</resetMask>
+					<resetMask>0x1FFFFF0F</resetMask>
 
 					<fields>
 						<field>
@@ -24264,8 +24348,8 @@ permissions and limitations under the License.
 							<access>read-only</access>
 						</field>
 						<field>
-							<name>SameAsI2CD08</name>
-							<description>Same as hlinkI2CD08</description>
+							<name>RW</name>
+							<description>RW</description>
 							<bitRange>[28:24]</bitRange>
 							<access>read-write</access>
 						</field>
@@ -24276,9 +24360,39 @@ permissions and limitations under the License.
 							<access>read-write</access>
 						</field>
 						<field>
-							<name>SameAsI2CD04</name>
-							<description>Same as hlinkI2CD04</description>
-							<bitRange>[19:0]</bitRange>
+							<name>CyclesOfMasterSCLClkhighPulseWidthTCKHigh</name>
+							<description>Cycles of master SCL clock-high pulse width (tCKHigh)</description>
+							<bitRange>[19:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>CyclesOfMasterSCLClklowPulseWidthTCKLow</name>
+							<description>Cycles of master SCL clock-low pulse width (tCKLow)</description>
+							<bitRange>[15:12]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>HoldTimeOfMasterslaveDataTHDDAT</name>
+							<description>Hold time of master/slave data (tHDDAT)</description>
+							<bitRange>[11:10]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>TimeoutBaseClkDivisorToutBaseClk</name>
+							<description>Timeout base clock divisor (toutBaseClk)</description>
+							<bitRange>[9:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[7:4]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>BaseClkDivisorTBaseClk</name>
+							<description>Base Clock divisor (tBaseClk)</description>
+							<bitRange>[3:0]</bitRange>
 							<access>read-write</access>
 						</field>
 					</fields>
@@ -24294,15 +24408,75 @@ permissions and limitations under the License.
 
 					<fields>
 						<field>
-							<name>SameAsI2CD14</name>
-							<description>Same as hlinkI2CD14</description>
-							<bitRange>[31:16]</bitRange>
+							<name>XferDataDirection</name>
+							<description>Transfer Data Direction</description>
+							<bitRange>[31:29]</bitRange>
 							<access>read-only</access>
 						</field>
 						<field>
-							<name>SameAsI2CD20</name>
-							<description>Same as hlinkI2CD20</description>
-							<bitRange>[15:0]</bitRange>
+							<name>SDAOE</name>
+							<description>SDA_OE</description>
+							<bitRange>[28:28]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SDAO</name>
+							<description>SDA_O</description>
+							<bitRange>[27:27]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SCLOE</name>
+							<description>SCL_OE</description>
+							<bitRange>[26:26]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SCLO</name>
+							<description>SCL_O</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>XferModeTimingStage</name>
+							<description>Transfer Mode Timing Stage</description>
+							<bitRange>[24:23]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>XferModeStateMachine</name>
+							<description>Transfer Mode State Machine</description>
+							<bitRange>[22:19]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SampledSCLLineState</name>
+							<description>Sampled SCL Line State</description>
+							<bitRange>[18:18]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SampledSDALineState</name>
+							<description>Sampled SDA Line State</description>
+							<bitRange>[17:17]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>BusBusyStatus</name>
+							<description>Bus Busy Status</description>
+							<bitRange>[16:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>RxByteBuffer</name>
+							<description>Receive Byte Buffer</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>TxByteBuffer</name>
+							<description>Transmit Byte Buffer</description>
+							<bitRange>[7:0]</bitRange>
 							<access>read-write</access>
 						</field>
 					</fields>
@@ -24314,13 +24488,55 @@ permissions and limitations under the License.
 					<size>32</size>
 					<access>read-write</access>
 					<resetValue>0x0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
+					<resetMask>0x3F1F1F01</resetMask>
 
 					<fields>
 						<field>
-							<name>SameAsI2CD1C</name>
-							<description>Same as hlinkI2CD1C</description>
-							<bitRange>[31:0]</bitRange>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>ActualRxdPoolBufferSize</name>
+							<description>Actual Received Pool Buffer Size</description>
+							<bitRange>[29:24]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved1</name>
+							<description>Reserved</description>
+							<bitRange>[23:21]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>RxPoolBufferSize</name>
+							<description>Receive Pool Buffer Size</description>
+							<bitRange>[20:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved2</name>
+							<description>Reserved</description>
+							<bitRange>[15:13]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>TxDataByteCount</name>
+							<description>Transmit Data Byte Count</description>
+							<bitRange>[12:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved3</name>
+							<description>Reserved</description>
+							<bitRange>[7:1]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>BufferOrganization</name>
+							<description>Buffer Organization</description>
+							<bitRange>[0:0]</bitRange>
 							<access>read-write</access>
 						</field>
 					</fields>
@@ -25166,13 +25382,49 @@ permissions and limitations under the License.
 					<size>32</size>
 					<access>read-write</access>
 					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
+					<resetMask>0x00FFFFFF</resetMask>
 
 					<fields>
 						<field>
-							<name>SameAsI2CD18</name>
-							<description>Same as hlinkI2CD18</description>
-							<bitRange>[31:0]</bitRange>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:24]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>EnblSlaveDevAddr3</name>
+							<description>Enable Slave Device Address3</description>
+							<bitRange>[23:23]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SlaveDevAddr3</name>
+							<description>Slave Device Address3</description>
+							<bitRange>[22:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblSlaveDevAddr2</name>
+							<description>Enable Slave Device Address2</description>
+							<bitRange>[15:15]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SlaveDevAddr2</name>
+							<description>Slave Device Address2</description>
+							<bitRange>[14:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblSlaveDevAddr1OnlyForNewRegMode</name>
+							<description>Enable Slave Device Address1 (only for New Register mode)</description>
+							<bitRange>[7:7]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>SlaveDevAddr1</name>
+							<description>Slave Device Address1</description>
+							<bitRange>[6:0]</bitRange>
 							<access>read-write</access>
 						</field>
 					</fields>
@@ -25416,7 +25668,7 @@ permissions and limitations under the License.
 					<size>32</size>
 					<access>read-write</access>
 					<resetValue>0x0</resetValue>
-					<resetMask>0x003FFFFF</resetMask>
+					<resetMask>0x003FC3FF</resetMask>
 
 					<fields>
 						<field>
@@ -25456,9 +25708,93 @@ permissions and limitations under the License.
 							<access>read-write</access>
 						</field>
 						<field>
-							<name>SameAsI2CD00</name>
-							<description>Same as hlinkI2CD00</description>
-							<bitRange>[17:0]</bitRange>
+							<name>EnblBusAutoreleaseWhenSCLLowSDALowOrSlaveModeInactiveTimeout</name>
+							<description>Enable bus auto-release when SCL low, SDA low, or slave mode inactive timeout</description>
+							<bitRange>[17:17]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblMasterAutoSDALockRecoveryCapabilityForSingleMasterCaseOnly</name>
+							<description>Enable master auto SDA lock recovery capability (for single master case only)</description>
+							<bitRange>[16:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DisMultimasterCapabilityForMasterFnOnly</name>
+							<description>Disable multi-master capability (for master function only)</description>
+							<bitRange>[15:15]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblSCLDirDriveModeForMasterFnOnly</name>
+							<description>Enable SCL direct drive mode (for master function only)</description>
+							<bitRange>[14:14]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved02</name>
+							<description>Reserved (0)</description>
+							<bitRange>[13:10]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>EnblSlaveAddrRangeMode</name>
+							<description>newverEnable slave address range mode</description>
+							<bitRange>[9:9]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblSDASigToDirDriveHighFor1T</name>
+							<description>Enable SDA signal to direct drive high for 1T</description>
+							<bitRange>[8:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblSCLSigToDirDriveHighFor1TMasterOnly</name>
+							<description>Enable SCL signal to direct drive high for 1T (Master Only)</description>
+							<bitRange>[7:7]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblHighSpeedMasterMode</name>
+							<description>Enable High Speed master mode</description>
+							<bitRange>[6:6]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DefeatureEnblI2CSMBusToRespondTheDefaultAddr1100001</name>
+							<description>defeatureEnable I2C/SMBus to respond the Default Address (1100_001)</description>
+							<bitRange>[5:5]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DefeatureEnblI2CSMBusToRespondTheAlertAddr0001100</name>
+							<description>defeatureEnable I2C/SMBus to respond the Alert Address (0001_100)</description>
+							<bitRange>[4:4]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DefeatureEnblI2CSMBusToRespondTheARPHostAddr0001000</name>
+							<description>defeatureEnable I2C/SMBus to respond the ARP Host Address (0001_000)</description>
+							<bitRange>[3:3]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>DefeatureEnblI2CSMBusToRespondTheGenCallAddr00000000</name>
+							<description>defeatureEnable I2C/SMBus to respond the General Call Address (0000_0000)</description>
+							<bitRange>[2:2]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblSlaveFn</name>
+							<description>Enable slave function</description>
+							<bitRange>[1:1]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>EnblMasterFn</name>
+							<description>Enable master function</description>
+							<bitRange>[0:0]</bitRange>
 							<access>read-write</access>
 						</field>
 					</fields>
@@ -25470,7 +25806,7 @@ permissions and limitations under the License.
 					<size>32</size>
 					<access>read-write</access>
 					<resetValue>0x0</resetValue>
-					<resetMask>0x1FFFFFFF</resetMask>
+					<resetMask>0x1FFFFF0F</resetMask>
 
 					<fields>
 						<field>
@@ -25480,8 +25816,8 @@ permissions and limitations under the License.
 							<access>read-only</access>
 						</field>
 						<field>
-							<name>SameAsI2CD08</name>
-							<description>Same as hlinkI2CD08</description>
+							<name>RW</name>
+							<description>RW</description>
 							<bitRange>[28:24]</bitRange>
 							<access>read-write</access>
 						</field>
@@ -25492,9 +25828,39 @@ permissions and limitations under the License.
 							<access>read-write</access>
 						</field>
 						<field>
-							<name>SameAsI2CD04</name>
-							<description>Same as hlinkI2CD04</description>
-							<bitRange>[19:0]</bitRange>
+							<name>CyclesOfMasterSCLClkhighPulseWidthTCKHigh</name>
+							<description>Cycles of master SCL clock-high pulse width (tCKHigh)</description>
+							<bitRange>[19:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>CyclesOfMasterSCLClklowPulseWidthTCKLow</name>
+							<description>Cycles of master SCL clock-low pulse width (tCKLow)</description>
+							<bitRange>[15:12]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>HoldTimeOfMasterslaveDataTHDDAT</name>
+							<description>Hold time of master/slave data (tHDDAT)</description>
+							<bitRange>[11:10]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>TimeoutBaseClkDivisorToutBaseClk</name>
+							<description>newverTimeout base clock divisor (toutBaseClk)</description>
+							<bitRange>[9:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[7:4]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>BaseClkDivisorTBaseClk</name>
+							<description>newverBase Clock divisor (tBaseClk)</description>
+							<bitRange>[3:0]</bitRange>
 							<access>read-write</access>
 						</field>
 					</fields>
@@ -25510,15 +25876,75 @@ permissions and limitations under the License.
 
 					<fields>
 						<field>
-							<name>SameAsI2CD14</name>
-							<description>Same as hlinkI2CD14</description>
-							<bitRange>[31:16]</bitRange>
+							<name>XferDataDirection</name>
+							<description>Transfer Data Direction</description>
+							<bitRange>[31:29]</bitRange>
 							<access>read-only</access>
 						</field>
 						<field>
-							<name>SameAsI2CD20</name>
-							<description>Same as hlinkI2CD20</description>
-							<bitRange>[15:0]</bitRange>
+							<name>SDAOE</name>
+							<description>SDA_OE</description>
+							<bitRange>[28:28]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SDAO</name>
+							<description>SDA_O</description>
+							<bitRange>[27:27]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SCLOE</name>
+							<description>SCL_OE</description>
+							<bitRange>[26:26]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SCLO</name>
+							<description>SCL_O</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>XferModeTimingStage</name>
+							<description>Transfer Mode Timing Stage</description>
+							<bitRange>[24:23]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>XferModeStateMachine</name>
+							<description>Transfer Mode State Machine</description>
+							<bitRange>[22:19]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SampledSCLLineState</name>
+							<description>Sampled SCL Line State</description>
+							<bitRange>[18:18]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>SampledSDALineState</name>
+							<description>Sampled SDA Line State</description>
+							<bitRange>[17:17]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>BusBusyStatus</name>
+							<description>Bus Busy Status</description>
+							<bitRange>[16:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>RxByteBuffer</name>
+							<description>Receive Byte Buffer</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>TxByteBuffer</name>
+							<description>Transmit Byte Buffer</description>
+							<bitRange>[7:0]</bitRange>
 							<access>read-write</access>
 						</field>
 					</fields>
@@ -25530,13 +25956,55 @@ permissions and limitations under the License.
 					<size>32</size>
 					<access>read-write</access>
 					<resetValue>0x0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
+					<resetMask>0x3F1F1F01</resetMask>
 
 					<fields>
 						<field>
-							<name>SameAsI2CD1C</name>
-							<description>Same as hlinkI2CD1C</description>
-							<bitRange>[31:0]</bitRange>
+							<name>Reserved</name>
+							<description>Reserved</description>
+							<bitRange>[31:30]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>ActualRxdPoolBufferSize</name>
+							<description>Actual Received Pool Buffer Size</description>
+							<bitRange>[29:24]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved1</name>
+							<description>Reserved</description>
+							<bitRange>[23:21]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>RxPoolBufferSize</name>
+							<description>Receive Pool Buffer Size</description>
+							<bitRange>[20:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved2</name>
+							<description>Reserved</description>
+							<bitRange>[15:13]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>TxDataByteCount</name>
+							<description>Transmit Data Byte Count</description>
+							<bitRange>[12:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>Reserved3</name>
+							<description>Reserved</description>
+							<bitRange>[7:1]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>BufferOrganization</name>
+							<description>newverBuffer Organization</description>
+							<bitRange>[0:0]</bitRange>
 							<access>read-write</access>
 						</field>
 					</fields>
