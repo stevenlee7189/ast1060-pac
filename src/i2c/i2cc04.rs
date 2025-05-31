@@ -27,10 +27,10 @@ pub type CyclesOfMasterSclclkhighMinimumPulseWidthTckhighMinR = crate::FieldRead
 #[doc = "Field `CyclesOfMasterSCLClkhighMinimumPulseWidthTCKHighMin` writer - Cycles of master SCL clock-high minimum pulse width (tCKHighMin)"]
 pub type CyclesOfMasterSclclkhighMinimumPulseWidthTckhighMinW<'a, REG> =
     crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `RW` reader - RW"]
-pub type RwR = crate::FieldReader;
-#[doc = "Field `RW` writer - RW"]
-pub type RwW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `TimeoutTimer` reader - Timeout timer"]
+pub type TimeoutTimerR = crate::FieldReader;
+#[doc = "Field `TimeoutTimer` writer - Timeout timer"]
+pub type TimeoutTimerW<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Field `Reserved0` reader - Reserved (0)"]
 pub type Reserved0R = crate::FieldReader;
 impl R {
@@ -70,10 +70,10 @@ impl R {
     ) -> CyclesOfMasterSclclkhighMinimumPulseWidthTckhighMinR {
         CyclesOfMasterSclclkhighMinimumPulseWidthTckhighMinR::new(((self.bits >> 20) & 0x0f) as u8)
     }
-    #[doc = "Bits 24:28 - RW"]
+    #[doc = "Bits 24:28 - Timeout timer"]
     #[inline(always)]
-    pub fn rw(&self) -> RwR {
-        RwR::new(((self.bits >> 24) & 0x1f) as u8)
+    pub fn timeout_timer(&self) -> TimeoutTimerR {
+        TimeoutTimerR::new(((self.bits >> 24) & 0x1f) as u8)
     }
     #[doc = "Bits 29:31 - Reserved (0)"]
     #[inline(always)]
@@ -122,10 +122,10 @@ impl W {
     ) -> CyclesOfMasterSclclkhighMinimumPulseWidthTckhighMinW<I2cc04Spec> {
         CyclesOfMasterSclclkhighMinimumPulseWidthTckhighMinW::new(self, 20)
     }
-    #[doc = "Bits 24:28 - RW"]
+    #[doc = "Bits 24:28 - Timeout timer"]
     #[inline(always)]
-    pub fn rw(&mut self) -> RwW<I2cc04Spec> {
-        RwW::new(self, 24)
+    pub fn timeout_timer(&mut self) -> TimeoutTimerW<I2cc04Spec> {
+        TimeoutTimerW::new(self, 24)
     }
 }
 #[doc = "Master/Slave Clock and AC Timing Control Register \\#1\n\nYou can [`read`](crate::Reg::read) this register and get [`i2cc04::R`](R). You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`i2cc04::W`](W). You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
