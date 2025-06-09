@@ -513,6 +513,123 @@ impl core::fmt::Debug for I2cbuff {
 }
 #[doc = "i2cbuff"]
 pub mod i2cbuff;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff1 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0c20>;
+impl core::fmt::Debug for I2cbuff1 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff1").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff1;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff2 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0c40>;
+impl core::fmt::Debug for I2cbuff2 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff2").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff2;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff3 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0c60>;
+impl core::fmt::Debug for I2cbuff3 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff3").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff3;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff4 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0c80>;
+impl core::fmt::Debug for I2cbuff4 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff4").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff4;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff5 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0ca0>;
+impl core::fmt::Debug for I2cbuff5 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff5").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff5;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff6 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0cc0>;
+impl core::fmt::Debug for I2cbuff6 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff6").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff6;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff7 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0ce0>;
+impl core::fmt::Debug for I2cbuff7 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff7").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff7;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff8 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0d00>;
+impl core::fmt::Debug for I2cbuff8 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff8").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff8;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff9 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0d20>;
+impl core::fmt::Debug for I2cbuff9 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff9").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff9;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff10 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0d40>;
+impl core::fmt::Debug for I2cbuff10 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff10").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff10;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff11 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0d60>;
+impl core::fmt::Debug for I2cbuff11 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff11").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff11;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff12 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0d80>;
+impl core::fmt::Debug for I2cbuff12 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff12").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff12;
+#[doc = "i2cbuff interface"]
+pub type I2cbuff13 = crate::Periph<i2cbuff::RegisterBlock, 0x7e7b_0da0>;
+impl core::fmt::Debug for I2cbuff13 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("I2cbuff13").finish()
+    }
+}
+#[doc = "i2cbuff interface"]
+pub use self::i2cbuff as i2cbuff13;
 #[doc = "hace"]
 pub type Hace = crate::Periph<hace::RegisterBlock, 0x7e6d_0000>;
 impl core::fmt::Debug for Hace {
@@ -718,6 +835,32 @@ pub struct Peripherals {
     pub i2cglobal: I2cglobal,
     #[doc = "i2cbuff"]
     pub i2cbuff: I2cbuff,
+    #[doc = "i2cbuff1"]
+    pub i2cbuff1: I2cbuff1,
+    #[doc = "i2cbuff2"]
+    pub i2cbuff2: I2cbuff2,
+    #[doc = "i2cbuff3"]
+    pub i2cbuff3: I2cbuff3,
+    #[doc = "i2cbuff4"]
+    pub i2cbuff4: I2cbuff4,
+    #[doc = "i2cbuff5"]
+    pub i2cbuff5: I2cbuff5,
+    #[doc = "i2cbuff6"]
+    pub i2cbuff6: I2cbuff6,
+    #[doc = "i2cbuff7"]
+    pub i2cbuff7: I2cbuff7,
+    #[doc = "i2cbuff8"]
+    pub i2cbuff8: I2cbuff8,
+    #[doc = "i2cbuff9"]
+    pub i2cbuff9: I2cbuff9,
+    #[doc = "i2cbuff10"]
+    pub i2cbuff10: I2cbuff10,
+    #[doc = "i2cbuff11"]
+    pub i2cbuff11: I2cbuff11,
+    #[doc = "i2cbuff12"]
+    pub i2cbuff12: I2cbuff12,
+    #[doc = "i2cbuff13"]
+    pub i2cbuff13: I2cbuff13,
     #[doc = "hace"]
     pub hace: Hace,
     #[doc = "secure"]
@@ -800,6 +943,19 @@ impl Peripherals {
             i2c13: I2c13::steal(),
             i2cglobal: I2cglobal::steal(),
             i2cbuff: I2cbuff::steal(),
+            i2cbuff1: I2cbuff1::steal(),
+            i2cbuff2: I2cbuff2::steal(),
+            i2cbuff3: I2cbuff3::steal(),
+            i2cbuff4: I2cbuff4::steal(),
+            i2cbuff5: I2cbuff5::steal(),
+            i2cbuff6: I2cbuff6::steal(),
+            i2cbuff7: I2cbuff7::steal(),
+            i2cbuff8: I2cbuff8::steal(),
+            i2cbuff9: I2cbuff9::steal(),
+            i2cbuff10: I2cbuff10::steal(),
+            i2cbuff11: I2cbuff11::steal(),
+            i2cbuff12: I2cbuff12::steal(),
+            i2cbuff13: I2cbuff13::steal(),
             hace: Hace::steal(),
             secure: Secure::steal(),
             i2cfilter: I2cfilter::steal(),

@@ -26026,6 +26026,84 @@ permissions and limitations under the License.
 			</registers>
 		</peripheral>
 
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff1</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0c20</baseAddress>
+		</peripheral>
+
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff2</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0c40</baseAddress>
+		</peripheral>
+
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff3</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0c60</baseAddress>
+		</peripheral>
+
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff4</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0c80</baseAddress>
+		</peripheral>
+
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff5</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0ca0</baseAddress>
+		</peripheral>
+
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff6</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0cc0</baseAddress>
+		</peripheral>
+
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff7</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0ce0</baseAddress>
+		</peripheral>
+
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff8</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0d00</baseAddress>
+		</peripheral>
+
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff9</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0d20</baseAddress>
+		</peripheral>
+
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff10</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0d40</baseAddress>
+		</peripheral>
+
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff11</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0d60</baseAddress>
+		</peripheral>
+
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff12</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0d80</baseAddress>
+		</peripheral>
+
+		<peripheral derivedFrom="i2cbuff">
+			<name>i2cbuff13</name>
+			<description>i2cbuff interface </description>
+			<baseAddress>0x7e7b0da0</baseAddress>
+		</peripheral>
+
 		<peripheral>
 			<name>hace</name>
 			<version>1.0</version>
