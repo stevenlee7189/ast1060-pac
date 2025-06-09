@@ -26004,138 +26004,14 @@ permissions and limitations under the License.
 
 			<registers>
 				<register>
-					<name>BUFF0</name>
-					<description>I2C Buffer Mode Buff0</description>
+					<dim>8</dim>
+					<dimIncrement>4</dimIncrement>
+					<name>BUFF[%s]</name>
+					<description>I2C Buffer Mode Buff</description>
 					<addressOffset>0x0</addressOffset>
 					<size>32</size>
 					<access>read-write</access>
-					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>Data</name>
-							<description>data</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>BUFF1</name>
-					<description>I2C Buffer Mode Buff1</description>
-					<addressOffset>0x4</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>Data</name>
-							<description>data</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>BUFF2</name>
-					<description>I2C Buffer Mode Buff2</description>
-					<addressOffset>0x8</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>Data</name>
-							<description>data</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>BUFF3</name>
-					<description>I2C Buffer Mode Buff3</description>
-					<addressOffset>0xc</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>Data</name>
-							<description>data</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>BUFF4</name>
-					<description>I2C Buffer Mode Buff4</description>
-					<addressOffset>0x10</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>Data</name>
-							<description>data</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>BUFF5</name>
-					<description>I2C Buffer Mode Buff5</description>
-					<addressOffset>0x14</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>Data</name>
-							<description>data</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>BUFF6</name>
-					<description>I2C Buffer Mode Buff6</description>
-					<addressOffset>0x18</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0</resetValue>
-					<resetMask>0xFFFFFFFF</resetMask>
-
-					<fields>
-						<field>
-							<name>Data</name>
-							<description>data</description>
-							<bitRange>[31:0]</bitRange>
-							<access>read-write</access>
-						</field>
-					</fields>
-				</register>
-				<register>
-					<name>BUFF7</name>
-					<description>I2C Buffer Mode Buff7</description>
-					<addressOffset>0x1c</addressOffset>
-					<size>32</size>
-					<access>read-write</access>
-					<resetValue>0</resetValue>
+					<resetValue>0x0</resetValue>
 					<resetMask>0xFFFFFFFF</resetMask>
 
 					<fields>
@@ -26148,84 +26024,6 @@ permissions and limitations under the License.
 					</fields>
 				</register>
 			</registers>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff1</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0c20</baseAddress>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff2</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0c40</baseAddress>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff3</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0c60</baseAddress>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff4</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0c80</baseAddress>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff5</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0ca0</baseAddress>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff6</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0cc0</baseAddress>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff7</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0ce0</baseAddress>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff8</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0d00</baseAddress>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff9</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0d20</baseAddress>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff10</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0d40</baseAddress>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff11</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0d60</baseAddress>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff12</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0d80</baseAddress>
-		</peripheral>
-
-		<peripheral derivedFrom="i2cbuff">
-			<name>i2cbuff13</name>
-			<description>i2cbuff interface </description>
-			<baseAddress>0x7e7b0da0</baseAddress>
 		</peripheral>
 
 		<peripheral>
@@ -31216,7 +31014,7 @@ permissions and limitations under the License.
 			<version>1.0</version>
 			<description>spipf</description>
 			<groupName>spipf</groupName>
-			<baseAddress>0x7e790000</baseAddress>
+			<baseAddress>0x7e791000</baseAddress>
 			<access>read-write</access>
 
 			<addressBlock>
