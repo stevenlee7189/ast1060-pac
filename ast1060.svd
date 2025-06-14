@@ -1101,6 +1101,401 @@ permissions and limitations under the License.
 					</fields>
 				</register>
 				<register>
+					<name>SPI064</name>
+					<description>Alternate Boot Control/Status</description>
+					<addressOffset>0x64</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0x0000005E</resetMask>
+
+					<fields>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[31:7]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>AlternateBootModeSel</name>
+							<description>Alternate Boot Mode selection</description>
+							<bitRange>[6:6]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>2_Chips_Mode</name>
+									<description>2 chips mode</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>1_Chip_Mode</name>
+									<description>1 chip mode</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved01</name>
+							<description>Reserved (0)</description>
+							<bitRange>[5:5]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>BootFlashSrcSelectIndicator</name>
+							<description>Boot flash source select indicator</description>
+							<bitRange>[4:4]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Boot_From_Primary_Source</name>
+									<description>boot from primary source</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Boot_From_Alternate_Source</name>
+									<description>boot from alternate source</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>SPISizeOfBootFlash</name>
+							<description>SPI size of boot flash</description>
+							<bitRange>[3:1]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>No_Define</name>
+									<description>no define</description>
+									<value>0b000</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>2_MB</name>
+									<description>2 MB</description>
+									<value>0b001</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>4_MB</name>
+									<description>4 MB</description>
+									<value>0b010</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>8_MB</name>
+									<description>8 MB</description>
+									<value>0b011</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>16_MB</name>
+									<description>16 MB</description>
+									<value>0b100</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>32_MB</name>
+									<description>32 MB</description>
+									<value>0b101</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>64_MB</name>
+									<description>64 MB</description>
+									<value>0b110</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>128_MB</name>
+									<description>128 MB</description>
+									<value>0b111</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved02</name>
+							<description>Reserved (0)</description>
+							<bitRange>[0:0]</bitRange>
+							<access>read-only</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SPI06C</name>
+					<description>Host Direct Access Commands \#4 (SPI1 only)</description>
+					<addressOffset>0x6c</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00001303</resetValue>
+					<resetMask>0xFF00FFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>IOModeForRead</name>
+							<description>IO Mode for Read</description>
+							<bitRange>[31:28]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Single_Bit</name>
+									<description>single bit.</description>
+									<value>0b0000</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Dual_Bit_Readwrite_Data_Cycle_Only</name>
+									<description>dual bit read/write, data cycle only.</description>
+									<value>0b0010</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Dual_Bit_Readwrite_Including_Address_And_Dummy_Byte_Cycle</name>
+									<description>dual bit read/write, including address and dummy byte cycle.</description>
+									<value>0b0011</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Quad_Bit_Readwrite_Data_Cycle_Only</name>
+									<description>quad bit read/write, data cycle only.</description>
+									<value>0b0100</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Quad_Bit_Readwrite_Including_Address_And_Dummy_Byte_Cycle</name>
+									<description>quad bit read/write, including address and dummy byte cycle.</description>
+									<value>0b0101</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>QPI_Mode_Quad_Bit_On_Commandaddressdata_Cycles</name>
+									<description>QPI mode, quad bit on command/address/data cycles.</description>
+									<value>0b1xxx</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>IOModeForPageProgram</name>
+							<description>IO Mode for Page Program</description>
+							<bitRange>[27:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Single_Bit</name>
+									<description>single bit.</description>
+									<value>0b0000</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Dual_Bit_Readwrite_Data_Cycle_Only</name>
+									<description>dual bit read/write, data cycle only.</description>
+									<value>0b0010</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Dual_Bit_Readwrite_Including_Address_And_Dummy_Byte_Cycle</name>
+									<description>dual bit read/write, including address and dummy byte cycle.</description>
+									<value>0b0011</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Quad_Bit_Readwrite_Data_Cycle_Only</name>
+									<description>quad bit read/write, data cycle only.</description>
+									<value>0b0100</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Quad_Bit_Readwrite_Including_Address_And_Dummy_Byte_Cycle</name>
+									<description>quad bit read/write, including address and dummy byte cycle.</description>
+									<value>0b0101</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>QPI_Mode_Quad_Bit_On_Commandaddressdata_Cycles</name>
+									<description>QPI mode, quad bit on command/address/data cycles.</description>
+									<value>0b1xxx</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>CmdForRead4BMode</name>
+							<description>Command for Read 4B mode</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>CmdForRead3BMode</name>
+							<description>Command for Read 3B mode</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SPI070</name>
+					<description>Host Direct Access Commands \#1 (SPI1 only)</description>
+					<addressOffset>0x70</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x80000605</resetValue>
+					<resetMask>0xFDFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>EnblCmdEncodingForDirAccess</name>
+							<description>Enable command encoding for direct access</description>
+							<bitRange>[31:31]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Disable_Host_Should_Manage_The_Controller_To_Issue_The_Required_Commands</name>
+									<description>Disable, host should manage the controller to issue the required commands.</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>Enable_Support_Encoded_Page_Program_And_Erase_Commands_Refer_Section_RefSECBSPIDMA</name>
+									<description>Enable, support encoded page program and erase commands. Refer Section \ref{SECB:SPIDMA.</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>DirectAccessCmdExecutionStepRegdebug</name>
+							<description>Direct access command execution step regdebug</description>
+							<bitRange>[30:26]</bitRange>
+							<access>read-only</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>Idle</name>
+									<description>Idle</description>
+									<value>0b00000</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>Reserved0</name>
+							<description>Reserved (0)</description>
+							<bitRange>[25:25]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>HostAccessSPI1CESel</name>
+							<description>Host access SPI1 CE selection</description>
+							<bitRange>[24:24]</bitRange>
+							<access>read-write</access>
+							<enumeratedValues>
+								<enumeratedValue>
+									<name>CE0</name>
+									<description>CE0</description>
+									<value>0b0</value>
+								</enumeratedValue>
+								<enumeratedValue>
+									<name>CE1</name>
+									<description>CE1</description>
+									<value>0b1</value>
+								</enumeratedValue>
+							</enumeratedValues>
+						</field>
+						<field>
+							<name>SPIFlashStsRegRegdebug</name>
+							<description>SPI flash status register regdebug</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-only</access>
+						</field>
+						<field>
+							<name>CmdForWrEnbl</name>
+							<description>Command for Write Enable</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>CmdForReadStatus</name>
+							<description>Command for Read Status</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SPI074</name>
+					<description>Host Direct Access Commands \#2 (SPI1 only)</description>
+					<addressOffset>0x74</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x21201202</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>CmdForSector4KErase4BMode</name>
+							<description>Command for Sector (4K) Erase 4B mode</description>
+							<bitRange>[31:24]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>CmdForSector4KErase3BMode</name>
+							<description>Command for Sector (4K) Erase 3B mode</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>CmdForPageProgram4BMode</name>
+							<description>Command for Page Program 4B mode</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>CmdForPageProgram3BMode</name>
+							<description>Command for Page Program 3B mode</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SPI078</name>
+					<description>Host Direct Access Commands \#3 (SPI1 only)</description>
+					<addressOffset>0x78</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0xDCD85C52</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>CmdForBlock64KErase4BMode</name>
+							<description>Command for Block (64K) Erase 4B mode</description>
+							<bitRange>[31:24]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>CmdForBlock64KErase3BMode</name>
+							<description>Command for Block (64K) Erase 3B mode</description>
+							<bitRange>[23:16]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>CmdForBlock32KErase4BMode</name>
+							<description>Command for Block (32K) Erase 4B mode</description>
+							<bitRange>[15:8]</bitRange>
+							<access>read-write</access>
+						</field>
+						<field>
+							<name>CmdForBlock32KErase3BMode</name>
+							<description>Command for Block (32K) Erase 3B mode</description>
+							<bitRange>[7:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SPI07C</name>
+					<description>DMA Buffer Mode Length Register</description>
+					<addressOffset>0x7c</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+
+					<fields>
+						<field>
+							<name>FIFOLengthStatus</name>
+							<description>FIFO Length Status</description>
+							<bitRange>[6:0]</bitRange>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
 					<name>SPI080</name>
 					<description>DMA Control/Status Register</description>
 					<addressOffset>0x80</addressOffset>

@@ -12,7 +12,14 @@ pub struct RegisterBlock {
     spi034: Spi034,
     _reserved8: [u8; 0x1c],
     spi054: Spi054,
-    _reserved9: [u8; 0x28],
+    _reserved9: [u8; 0x0c],
+    spi064: Spi064,
+    _reserved10: [u8; 0x04],
+    spi06c: Spi06c,
+    spi070: Spi070,
+    spi074: Spi074,
+    spi078: Spi078,
+    spi07c: Spi07c,
     spi080: Spi080,
     spi084: Spi084,
     spi088: Spi088,
@@ -20,7 +27,7 @@ pub struct RegisterBlock {
     spi090: Spi090,
     spi094: Spi094,
     spi098: Spi098,
-    _reserved16: [u8; 0x04],
+    _reserved22: [u8; 0x04],
     spi0a0: Spi0a0,
     spi0a4: Spi0a4,
     spi0a8: Spi0a8,
@@ -31,7 +38,7 @@ pub struct RegisterBlock {
     spi0bc: Spi0bc,
     spi0c0: Spi0c0,
     spi0c4: Spi0c4,
-    _reserved26: [u8; 0x38],
+    _reserved32: [u8; 0x38],
     spi100: Spi100,
     spi104: Spi104,
     spi108: Spi108,
@@ -53,7 +60,7 @@ pub struct RegisterBlock {
     spi174: Spi174,
     spi178: Spi178,
     spi17c: Spi17c,
-    _reserved47: [u8; 0x80],
+    _reserved53: [u8; 0x80],
     spirbuf: [Spirbuf; 64],
 }
 impl RegisterBlock {
@@ -101,6 +108,36 @@ impl RegisterBlock {
     #[inline(always)]
     pub const fn spi054(&self) -> &Spi054 {
         &self.spi054
+    }
+    #[doc = "0x64 - Alternate Boot Control/Status"]
+    #[inline(always)]
+    pub const fn spi064(&self) -> &Spi064 {
+        &self.spi064
+    }
+    #[doc = "0x6c - Host Direct Access Commands \\#4 (SPI1 only)"]
+    #[inline(always)]
+    pub const fn spi06c(&self) -> &Spi06c {
+        &self.spi06c
+    }
+    #[doc = "0x70 - Host Direct Access Commands \\#1 (SPI1 only)"]
+    #[inline(always)]
+    pub const fn spi070(&self) -> &Spi070 {
+        &self.spi070
+    }
+    #[doc = "0x74 - Host Direct Access Commands \\#2 (SPI1 only)"]
+    #[inline(always)]
+    pub const fn spi074(&self) -> &Spi074 {
+        &self.spi074
+    }
+    #[doc = "0x78 - Host Direct Access Commands \\#3 (SPI1 only)"]
+    #[inline(always)]
+    pub const fn spi078(&self) -> &Spi078 {
+        &self.spi078
+    }
+    #[doc = "0x7c - DMA Buffer Mode Length Register"]
+    #[inline(always)]
+    pub const fn spi07c(&self) -> &Spi07c {
+        &self.spi07c
     }
     #[doc = "0x80 - DMA Control/Status Register"]
     #[inline(always)]
@@ -355,6 +392,36 @@ pub mod spi034;
 pub type Spi054 = crate::Reg<spi054::Spi054Spec>;
 #[doc = "SPI Dummy Cycle Data Register"]
 pub mod spi054;
+#[doc = "SPI064 (rw) register accessor: Alternate Boot Control/Status\n\nYou can [`read`](crate::Reg::read) this register and get [`spi064::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`spi064::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@spi064`] module"]
+#[doc(alias = "SPI064")]
+pub type Spi064 = crate::Reg<spi064::Spi064Spec>;
+#[doc = "Alternate Boot Control/Status"]
+pub mod spi064;
+#[doc = "SPI06C (rw) register accessor: Host Direct Access Commands \\#4 (SPI1 only)\n\nYou can [`read`](crate::Reg::read) this register and get [`spi06c::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`spi06c::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@spi06c`] module"]
+#[doc(alias = "SPI06C")]
+pub type Spi06c = crate::Reg<spi06c::Spi06cSpec>;
+#[doc = "Host Direct Access Commands \\#4 (SPI1 only)"]
+pub mod spi06c;
+#[doc = "SPI070 (rw) register accessor: Host Direct Access Commands \\#1 (SPI1 only)\n\nYou can [`read`](crate::Reg::read) this register and get [`spi070::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`spi070::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@spi070`] module"]
+#[doc(alias = "SPI070")]
+pub type Spi070 = crate::Reg<spi070::Spi070Spec>;
+#[doc = "Host Direct Access Commands \\#1 (SPI1 only)"]
+pub mod spi070;
+#[doc = "SPI074 (rw) register accessor: Host Direct Access Commands \\#2 (SPI1 only)\n\nYou can [`read`](crate::Reg::read) this register and get [`spi074::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`spi074::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@spi074`] module"]
+#[doc(alias = "SPI074")]
+pub type Spi074 = crate::Reg<spi074::Spi074Spec>;
+#[doc = "Host Direct Access Commands \\#2 (SPI1 only)"]
+pub mod spi074;
+#[doc = "SPI078 (rw) register accessor: Host Direct Access Commands \\#3 (SPI1 only)\n\nYou can [`read`](crate::Reg::read) this register and get [`spi078::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`spi078::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@spi078`] module"]
+#[doc(alias = "SPI078")]
+pub type Spi078 = crate::Reg<spi078::Spi078Spec>;
+#[doc = "Host Direct Access Commands \\#3 (SPI1 only)"]
+pub mod spi078;
+#[doc = "SPI07C (rw) register accessor: DMA Buffer Mode Length Register\n\nYou can [`read`](crate::Reg::read) this register and get [`spi07c::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`spi07c::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@spi07c`] module"]
+#[doc(alias = "SPI07C")]
+pub type Spi07c = crate::Reg<spi07c::Spi07cSpec>;
+#[doc = "DMA Buffer Mode Length Register"]
+pub mod spi07c;
 #[doc = "SPI080 (rw) register accessor: DMA Control/Status Register\n\nYou can [`read`](crate::Reg::read) this register and get [`spi080::R`]. You can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`spi080::W`]. You can also [`modify`](crate::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@spi080`] module"]
 #[doc(alias = "SPI080")]
 pub type Spi080 = crate::Reg<spi080::Spi080Spec>;
