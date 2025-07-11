@@ -15,6 +15,14 @@ extern "C" {
     fn uart();
     fn gpio();
     fn scu();
+    fn timer();
+    fn timer1();
+    fn timer2();
+    fn timer3();
+    fn timer4();
+    fn timer5();
+    fn timer6();
+    fn timer7();
     fn wdt();
     fn fmc();
     fn sgpiom();
@@ -71,14 +79,14 @@ pub static __INTERRUPTS: [Vector; 128] = [
     Vector { _reserved: 0 },
     Vector { _reserved: 0 },
     Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
-    Vector { _reserved: 0 },
+    Vector { _handler: timer },
+    Vector { _handler: timer1 },
+    Vector { _handler: timer2 },
+    Vector { _handler: timer3 },
+    Vector { _handler: timer4 },
+    Vector { _handler: timer5 },
+    Vector { _handler: timer6 },
+    Vector { _handler: timer7 },
     Vector { _handler: wdt },
     Vector { _reserved: 0 },
     Vector { _reserved: 0 },
@@ -198,6 +206,22 @@ pub enum Interrupt {
     gpio = 11,
     #[doc = "12 - scu"]
     scu = 12,
+    #[doc = "16 - timer"]
+    timer = 16,
+    #[doc = "17 - timer1"]
+    timer1 = 17,
+    #[doc = "18 - timer2"]
+    timer2 = 18,
+    #[doc = "19 - timer3"]
+    timer3 = 19,
+    #[doc = "20 - timer4"]
+    timer4 = 20,
+    #[doc = "21 - timer5"]
+    timer5 = 21,
+    #[doc = "22 - timer6"]
+    timer6 = 22,
+    #[doc = "23 - timer7"]
+    timer7 = 23,
     #[doc = "24 - wdt"]
     wdt = 24,
     #[doc = "39 - fmc"]
@@ -278,7 +302,7 @@ impl core::fmt::Debug for Spi1 {
     }
 }
 #[doc = "spi interface"]
-pub use self::spi as other_spi1;
+pub use self::spi as spi1;
 #[doc = "i3cglobal"]
 pub type I3cglobal = crate::Periph<i3cglobal::RegisterBlock, 0x7e7a_0000>;
 impl core::fmt::Debug for I3cglobal {
@@ -305,7 +329,7 @@ impl core::fmt::Debug for I3c1 {
     }
 }
 #[doc = "i3c interface"]
-pub use self::i3c as other_i3c1;
+pub use self::i3c as i3c1;
 #[doc = "i3c interface"]
 pub type I3c2 = crate::Periph<i3c::RegisterBlock, 0x7e7a_4000>;
 impl core::fmt::Debug for I3c2 {
@@ -314,7 +338,7 @@ impl core::fmt::Debug for I3c2 {
     }
 }
 #[doc = "i3c interface"]
-pub use self::i3c as other_i3c2;
+pub use self::i3c as i3c2;
 #[doc = "i3c interface"]
 pub type I3c3 = crate::Periph<i3c::RegisterBlock, 0x7e7a_5000>;
 impl core::fmt::Debug for I3c3 {
@@ -323,7 +347,7 @@ impl core::fmt::Debug for I3c3 {
     }
 }
 #[doc = "i3c interface"]
-pub use self::i3c as other_i3c3;
+pub use self::i3c as i3c3;
 #[doc = "gpio"]
 pub type Gpio = crate::Periph<gpio::RegisterBlock, 0x7e78_0000>;
 impl core::fmt::Debug for Gpio {
@@ -386,7 +410,7 @@ impl core::fmt::Debug for I2c1 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c1;
+pub use self::i2c as i2c1;
 #[doc = "i2c interface"]
 pub type I2c2 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0180>;
 impl core::fmt::Debug for I2c2 {
@@ -395,7 +419,7 @@ impl core::fmt::Debug for I2c2 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c2;
+pub use self::i2c as i2c2;
 #[doc = "i2c interface"]
 pub type I2c3 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0200>;
 impl core::fmt::Debug for I2c3 {
@@ -404,7 +428,7 @@ impl core::fmt::Debug for I2c3 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c3;
+pub use self::i2c as i2c3;
 #[doc = "i2c interface"]
 pub type I2c4 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0280>;
 impl core::fmt::Debug for I2c4 {
@@ -413,7 +437,7 @@ impl core::fmt::Debug for I2c4 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c4;
+pub use self::i2c as i2c4;
 #[doc = "i2c interface"]
 pub type I2c5 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0300>;
 impl core::fmt::Debug for I2c5 {
@@ -422,7 +446,7 @@ impl core::fmt::Debug for I2c5 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c5;
+pub use self::i2c as i2c5;
 #[doc = "i2c interface"]
 pub type I2c6 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0380>;
 impl core::fmt::Debug for I2c6 {
@@ -431,7 +455,7 @@ impl core::fmt::Debug for I2c6 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c6;
+pub use self::i2c as i2c6;
 #[doc = "i2c interface"]
 pub type I2c7 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0400>;
 impl core::fmt::Debug for I2c7 {
@@ -440,7 +464,7 @@ impl core::fmt::Debug for I2c7 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c7;
+pub use self::i2c as i2c7;
 #[doc = "i2c interface"]
 pub type I2c8 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0480>;
 impl core::fmt::Debug for I2c8 {
@@ -449,7 +473,7 @@ impl core::fmt::Debug for I2c8 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c8;
+pub use self::i2c as i2c8;
 #[doc = "i2c interface"]
 pub type I2c9 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0500>;
 impl core::fmt::Debug for I2c9 {
@@ -458,7 +482,7 @@ impl core::fmt::Debug for I2c9 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c9;
+pub use self::i2c as i2c9;
 #[doc = "i2c interface"]
 pub type I2c10 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0580>;
 impl core::fmt::Debug for I2c10 {
@@ -467,7 +491,7 @@ impl core::fmt::Debug for I2c10 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c10;
+pub use self::i2c as i2c10;
 #[doc = "i2c interface"]
 pub type I2c11 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0600>;
 impl core::fmt::Debug for I2c11 {
@@ -476,7 +500,7 @@ impl core::fmt::Debug for I2c11 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c11;
+pub use self::i2c as i2c11;
 #[doc = "i2c interface"]
 pub type I2c12 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0680>;
 impl core::fmt::Debug for I2c12 {
@@ -485,7 +509,7 @@ impl core::fmt::Debug for I2c12 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c12;
+pub use self::i2c as i2c12;
 #[doc = "i2c interface"]
 pub type I2c13 = crate::Periph<i2c::RegisterBlock, 0x7e7b_0700>;
 impl core::fmt::Debug for I2c13 {
@@ -494,7 +518,7 @@ impl core::fmt::Debug for I2c13 {
     }
 }
 #[doc = "i2c interface"]
-pub use self::i2c as other_i2c13;
+pub use self::i2c as i2c13;
 #[doc = "i2cglobal"]
 pub type I2cglobal = crate::Periph<i2cglobal::RegisterBlock, 0x7e7b_0000>;
 impl core::fmt::Debug for I2cglobal {
@@ -774,6 +798,87 @@ impl core::fmt::Debug for Fmc {
 }
 #[doc = "fmc"]
 pub mod fmc;
+#[doc = "timer"]
+pub type Timer = crate::Periph<timer::RegisterBlock, 0x7e78_2000>;
+impl core::fmt::Debug for Timer {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Timer").finish()
+    }
+}
+#[doc = "timer"]
+pub mod timer;
+#[doc = "timer interface"]
+pub type Timer1 = crate::Periph<timer::RegisterBlock, 0x7e78_2010>;
+impl core::fmt::Debug for Timer1 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Timer1").finish()
+    }
+}
+#[doc = "timer interface"]
+pub use self::timer as timer1;
+#[doc = "timer interface"]
+pub type Timer2 = crate::Periph<timer::RegisterBlock, 0x7e78_2020>;
+impl core::fmt::Debug for Timer2 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Timer2").finish()
+    }
+}
+#[doc = "timer interface"]
+pub use self::timer as timer2;
+#[doc = "timer interface"]
+pub type Timer3 = crate::Periph<timer::RegisterBlock, 0x7e78_2040>;
+impl core::fmt::Debug for Timer3 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Timer3").finish()
+    }
+}
+#[doc = "timer interface"]
+pub use self::timer as timer3;
+#[doc = "timer interface"]
+pub type Timer4 = crate::Periph<timer::RegisterBlock, 0x7e78_2050>;
+impl core::fmt::Debug for Timer4 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Timer4").finish()
+    }
+}
+#[doc = "timer interface"]
+pub use self::timer as timer4;
+#[doc = "timer interface"]
+pub type Timer5 = crate::Periph<timer::RegisterBlock, 0x7e78_2060>;
+impl core::fmt::Debug for Timer5 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Timer5").finish()
+    }
+}
+#[doc = "timer interface"]
+pub use self::timer as timer5;
+#[doc = "timer interface"]
+pub type Timer6 = crate::Periph<timer::RegisterBlock, 0x7e78_2070>;
+impl core::fmt::Debug for Timer6 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Timer6").finish()
+    }
+}
+#[doc = "timer interface"]
+pub use self::timer as timer6;
+#[doc = "timer interface"]
+pub type Timer7 = crate::Periph<timer::RegisterBlock, 0x7e78_2080>;
+impl core::fmt::Debug for Timer7 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Timer7").finish()
+    }
+}
+#[doc = "timer interface"]
+pub use self::timer as timer7;
+#[doc = "timerg"]
+pub type Timerg = crate::Periph<timerg::RegisterBlock, 0x7e78_2030>;
+impl core::fmt::Debug for Timerg {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("Timerg").finish()
+    }
+}
+#[doc = "timerg"]
+pub mod timerg;
 #[no_mangle]
 static mut DEVICE_PERIPHERALS: bool = false;
 #[doc = r" All the peripherals."]
@@ -893,6 +998,24 @@ pub struct Peripherals {
     pub wdt3: Wdt3,
     #[doc = "fmc"]
     pub fmc: Fmc,
+    #[doc = "timer"]
+    pub timer: Timer,
+    #[doc = "timer1"]
+    pub timer1: Timer1,
+    #[doc = "timer2"]
+    pub timer2: Timer2,
+    #[doc = "timer3"]
+    pub timer3: Timer3,
+    #[doc = "timer4"]
+    pub timer4: Timer4,
+    #[doc = "timer5"]
+    pub timer5: Timer5,
+    #[doc = "timer6"]
+    pub timer6: Timer6,
+    #[doc = "timer7"]
+    pub timer7: Timer7,
+    #[doc = "timerg"]
+    pub timerg: Timerg,
 }
 impl Peripherals {
     #[doc = r" Returns all the peripherals *once*."]
@@ -972,6 +1095,15 @@ impl Peripherals {
             wdt2: Wdt2::steal(),
             wdt3: Wdt3::steal(),
             fmc: Fmc::steal(),
+            timer: Timer::steal(),
+            timer1: Timer1::steal(),
+            timer2: Timer2::steal(),
+            timer3: Timer3::steal(),
+            timer4: Timer4::steal(),
+            timer5: Timer5::steal(),
+            timer6: Timer6::steal(),
+            timer7: Timer7::steal(),
+            timerg: Timerg::steal(),
         }
     }
 }
