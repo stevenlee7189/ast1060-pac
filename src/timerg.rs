@@ -1,7 +1,6 @@
 #[repr(C)]
 #[doc = "Register block"]
 pub struct RegisterBlock {
-    _reserved0: [u8; 0x30],
     timerg030: Timerg030,
     timerg034: Timerg034,
     _reserved2: [u8; 0x04],
